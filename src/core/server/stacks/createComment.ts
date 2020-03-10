@@ -47,6 +47,7 @@ import { updateUserLastCommentID } from "coral-server/services/users";
 import { Request } from "coral-server/types/express";
 
 import {
+  GQLCOMMENT_MEDIA_PROVIDER,
   GQLSTORY_MODE,
   GQLTAG,
 } from "coral-server/graph/schema/__generated__/types";
@@ -56,13 +57,7 @@ import { publishChanges, updateAllCommentCounts } from "./helpers";
 
 export type CreateComment = Omit<
   CreateCommentInput,
-  | "status"
-  | "metadata"
-  | "ancestorIDs"
-  | "actionCounts"
-  | "tags"
-  | "siteID"
-  | "media"
+  "status" | "metadata" | "ancestorIDs" | "actionCounts" | "tags" | "siteID"
 >;
 
 const markCommentAsAnswered = async (
@@ -220,6 +215,11 @@ export default async function create(
     actionCounts = encodeActionCounts(...filterDuplicateActions(actions));
   }
 
+  if (input.media) {
+    // do some stuff to validate the url
+    input.media.provider = "GIPHY" as GQLCOMMENT_MEDIA_PROVIDER;
+  }
+
   // Create the comment!
   const { comment, revision } = await createComment(
     mongo,
@@ -231,6 +231,7 @@ export default async function create(
       body,
       status,
       ancestorIDs,
+      media: input.media,
       metadata,
       actionCounts,
     },

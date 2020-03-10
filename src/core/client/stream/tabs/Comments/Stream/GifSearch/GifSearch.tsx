@@ -15,7 +15,7 @@ export interface Gif {
   height: number;
   url: string;
   alt: string;
-  id: string;
+  remote_id: string;
   preview: string;
 }
 
@@ -49,7 +49,7 @@ const GifSearch: FunctionComponent<Props> = ({ show, onSelect }) => {
         width: gif.images.downsized_medium.width,
         height: gif.images.downsized_medium.height,
         alt: gif.title,
-        id: gif.id,
+        remote_id: gif.id,
         preview: gif.images.fixed_width_small_still.url,
       });
     },

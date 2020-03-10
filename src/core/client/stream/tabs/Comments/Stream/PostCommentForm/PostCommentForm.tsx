@@ -1,6 +1,7 @@
 import { Localized } from "@fluent/react/compat";
 import cn from "classnames";
 import { FormApi, FormState } from "final-form";
+import { omit } from "lodash";
 import React, { FunctionComponent, useCallback, useState } from "react";
 import { Field, Form, FormSpy } from "react-final-form";
 
@@ -16,9 +17,9 @@ import { AriaInfo, Button, Flex, HorizontalGutter } from "coral-ui/components";
 import { getCommentBodyValidators, normalizeRTEHTML } from "../../helpers";
 import RemainingCharactersContainer from "../../RemainingCharacters";
 import RTE from "../../RTE";
+import GifSearch, { Gif } from "../GifSearch";
 import MessageBoxContainer from "../MessageBoxContainer";
 import PostCommentSubmitStatusContainer from "./PostCommentSubmitStatusContainer";
-import GifSearch, { Gif } from "../GifSearch";
 
 import styles from "./PostCommentForm.css";
 
@@ -64,11 +65,23 @@ const PostCommentForm: FunctionComponent<Props> = props => {
     }
   }, [showGifSearch]);
   const onGifSelect = useCallback((gif: Gif) => {
-    /* eslint-disable-next-line */
-    console.log(gif);
     setShowGifSearch(false);
     setSelectedGif(gif);
   }, []);
+
+  const onSubmit = useCallback(
+    (values, form) => {
+      if (selectedGif) {
+        values.media = {
+          ...omit(selectedGif, "preview"),
+          mimetype: "image/gif",
+        };
+      }
+      setSelectedGif(null);
+      props.onSubmit(values, form);
+    },
+    [props.onSubmit, selectedGif]
+  );
 
   return (
     <div className={CLASSES.createComment.$root}>
@@ -78,7 +91,7 @@ const PostCommentForm: FunctionComponent<Props> = props => {
           className={cn(CLASSES.createComment.message, styles.messageBox)}
         />
       )}
-      <Form onSubmit={props.onSubmit} initialValues={props.initialValues}>
+      <Form onSubmit={onSubmit} initialValues={props.initialValues}>
         {({ handleSubmit, submitting, submitError, form }) => (
           <form
             autoComplete="off"
@@ -142,10 +155,7 @@ const PostCommentForm: FunctionComponent<Props> = props => {
                       </Localized>
                       <GifSearch show={showGifSearch} onSelect={onGifSelect} />
                       {selectedGif && (
-                        <img
-                          src={selectedGif.preview}
-                          alt={selectedGif.title}
-                        />
+                        <img src={selectedGif.preview} alt={selectedGif.alt} />
                       )}
                       {props.disabled ? (
                         <>

@@ -120,6 +120,8 @@ export class PostCommentFormContainer extends Component<Props, State> {
   private handleOnSubmit: PropTypesOf<
     typeof PostCommentForm
   >["onSubmit"] = async (input, form) => {
+    /* eslint-disable-next-line */
+    console.log(input);
     try {
       if (this.props.tab === "FEATURED_COMMENTS") {
         this.props.onChangeTab("ALL_COMMENTS");

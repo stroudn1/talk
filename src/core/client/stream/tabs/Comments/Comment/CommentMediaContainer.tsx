@@ -18,7 +18,7 @@ const CommentMediaContainer: FunctionComponent<Props> = ({ comment }) => {
     <>
       {comment.media.map(media => (
         <CommentMedia
-          key={media.id}
+          key={media.remote_id}
           url={media.url}
           width={media.width}
           height={media.height}
@@ -33,12 +33,12 @@ const enhanced = withFragmentContainer<Props>({
   comment: graphql`
     fragment CommentMediaContainer_comment on Comment {
       media {
-        id
+        remote_id
         url
-        provider
         width
         height
         alt
+        mimetype
       }
     }
   `,

@@ -144,7 +144,9 @@ export type CreateCommentInput = Omit<
 > &
   Required<Pick<Revision, "body">> &
   Pick<Revision, "metadata"> &
-  Partial<Pick<Comment, "actionCounts" | "siteID">>;
+  Partial<Pick<Comment, "actionCounts" | "siteID">> & {
+    media?: CommentMedia;
+  };
 
 export async function createComment(
   mongo: Db,
@@ -153,7 +155,7 @@ export async function createComment(
   now = new Date()
 ) {
   // Pull out some useful properties from the input.
-  const { body, actionCounts = {}, metadata, ...rest } = input;
+  const { body, actionCounts = {}, metadata, media, ...rest } = input;
 
   // Generate the revision.
   const revision: Readonly<Revision> = {
@@ -171,7 +173,6 @@ export async function createComment(
     tenantID,
     childIDs: [],
     childCount: 0,
-    media: [],
     revisions: [revision],
     createdAt: now,
   };
@@ -184,6 +185,7 @@ export async function createComment(
     ...rest,
     // ActionCounts because they may be passed in!
     actionCounts,
+    media: media ? [media] : [],
   };
 
   // Insert it into the database.

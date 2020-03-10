@@ -2412,14 +2412,13 @@ type CommentTagCounts {
 }
 
 type CommentMedia {
-  id: ID!
   provider: COMMENT_MEDIA_PROVIDER!
   url: String!
-  createdAt: Time!
   width: Int!
   height: Int!
   mimetype: String!
   alt: String!
+  remote_id: String!
 }
 
 """
@@ -3123,6 +3122,15 @@ type UpdateNotificationSettingsPayload {
 ## createComment
 ##################
 
+input CommentMediaInput {
+  url: String!
+  width: Int!
+  height: Int!
+  mimetype: String!
+  alt: String!
+  remote_id: String!
+}
+
 """
 CreateCommentInput provides the input for the createComment Mutation.
 """
@@ -3148,6 +3156,8 @@ input CreateCommentInput {
   clientMutationId is required for Relay support.
   """
   clientMutationId: String!
+
+  media: CommentMediaInput
 }
 
 """

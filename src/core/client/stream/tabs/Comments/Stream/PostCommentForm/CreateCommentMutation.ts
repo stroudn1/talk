@@ -175,6 +175,7 @@ async function commit(
             storyID: input.storyID,
             body: input.body,
             nudge: input.nudge,
+            media: input.media,
             clientMutationId: clientMutationId.toString(),
           },
         },
@@ -185,6 +186,7 @@ async function commit(
               node: {
                 id,
                 createdAt: currentDate,
+                media: input.media ? [input.media] : [],
                 status: "NONE",
                 author: {
                   id: viewer.id,
