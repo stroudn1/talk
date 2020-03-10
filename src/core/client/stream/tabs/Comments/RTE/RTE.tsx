@@ -4,7 +4,7 @@ import cn from "classnames";
 import React, { EventHandler, FocusEvent, FunctionComponent, Ref } from "react";
 
 import CLASSES from "coral-stream/classes";
-import { Icon } from "coral-ui/components";
+import { Button, Icon } from "coral-ui/components";
 import { PropTypesOf } from "coral-ui/types";
 
 import styles from "./RTE.css";
@@ -73,6 +73,7 @@ export interface RTEProps {
   disabled?: boolean;
 
   forwardRef?: Ref<CoralRTE>;
+  onToggleGifSearch?: () => void;
 }
 
 const features = [
@@ -113,6 +114,7 @@ const RTE: FunctionComponent<RTEProps> = props => {
     toolbarClassName,
     onFocus,
     onBlur,
+    onToggleGifSearch,
     ...rest
   } = props;
   return (
@@ -139,7 +141,12 @@ const RTE: FunctionComponent<RTEProps> = props => {
         value={value || defaultValue}
         disabled={disabled}
         placeholder={placeholder}
-        features={features}
+        features={[
+          ...features,
+          <Button key="gif" onClick={onToggleGifSearch}>
+            gif
+          </Button>,
+        ]}
         ref={forwardRef}
         toolbarPosition="bottom"
         onBlur={onBlur}

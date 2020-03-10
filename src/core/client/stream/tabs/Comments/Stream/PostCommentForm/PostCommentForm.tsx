@@ -1,7 +1,7 @@
 import { Localized } from "@fluent/react/compat";
 import cn from "classnames";
 import { FormApi, FormState } from "final-form";
-import React, { FunctionComponent, useCallback } from "react";
+import React, { FunctionComponent, useCallback, useState } from "react";
 import { Field, Form, FormSpy } from "react-final-form";
 
 import { useViewerEvent } from "coral-framework/lib/events";
@@ -18,6 +18,7 @@ import RemainingCharactersContainer from "../../RemainingCharacters";
 import RTE from "../../RTE";
 import MessageBoxContainer from "../MessageBoxContainer";
 import PostCommentSubmitStatusContainer from "./PostCommentSubmitStatusContainer";
+import GifSearch, { Gif } from "../GifSearch";
 
 import styles from "./PostCommentForm.css";
 
@@ -53,6 +54,22 @@ const PostCommentForm: FunctionComponent<Props> = props => {
   }, [emitFocusEvent]);
   const isQA =
     props.story.settings && props.story.settings.mode === GQLSTORY_MODE.QA;
+  const [showGifSearch, setShowGifSearch] = useState(false);
+  const [selectedGif, setSelectedGif] = useState<Gif | null>(null);
+  const toggleGifSearch = useCallback(() => {
+    if (showGifSearch) {
+      setShowGifSearch(false);
+    } else {
+      setShowGifSearch(true);
+    }
+  }, [showGifSearch]);
+  const onGifSelect = useCallback((gif: Gif) => {
+    /* eslint-disable-next-line */
+    console.log(gif);
+    setShowGifSearch(false);
+    setSelectedGif(gif);
+  }, []);
+
   return (
     <div className={CLASSES.createComment.$root}>
       {props.showMessageBox && (
@@ -120,8 +137,16 @@ const PostCommentForm: FunctionComponent<Props> = props => {
                           value={input.value}
                           placeholder="Post a comment"
                           disabled={submitting || props.disabled}
+                          onToggleGifSearch={toggleGifSearch}
                         />
                       </Localized>
+                      <GifSearch show={showGifSearch} onSelect={onGifSelect} />
+                      {selectedGif && (
+                        <img
+                          src={selectedGif.preview}
+                          alt={selectedGif.title}
+                        />
+                      )}
                       {props.disabled ? (
                         <>
                           {props.disabledMessage && (

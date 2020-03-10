@@ -5,7 +5,10 @@ import { Overwrite } from "coral-framework/types";
 
 import { extractError } from "./network";
 
-const buildOptions = (inputOptions: RequestInit = {}) => {
+const buildOptions = (
+  inputOptions: RequestInit = {},
+  overrideOptions = false
+) => {
   const defaultOptions: RequestInit = {
     method: "GET",
     headers: {
@@ -14,7 +17,9 @@ const buildOptions = (inputOptions: RequestInit = {}) => {
     },
     credentials: "same-origin",
   };
-  const options = merge({}, defaultOptions, inputOptions);
+  const options = overrideOptions
+    ? inputOptions
+    : merge({}, defaultOptions, inputOptions);
   if (options.method!.toLowerCase() !== "get") {
     options.body = JSON.stringify(options.body);
   }
@@ -64,7 +69,8 @@ export class RestClient {
 
   public async fetch<T = {}>(
     path: string,
-    options: PartialRequestInit
+    options: PartialRequestInit,
+    overrideOptions = false
   ): Promise<T> {
     let opts = options;
     const token = options.token || (this.tokenGetter && this.tokenGetter());
@@ -82,7 +88,10 @@ export class RestClient {
         },
       });
     }
-    const response = await fetch(`${this.uri}${path}`, buildOptions(opts));
+    const response = await fetch(
+      `${this.uri}${path}`,
+      buildOptions(opts, overrideOptions)
+    );
     return handleResp(response);
   }
 }
