@@ -23,6 +23,7 @@ export interface CommentProps {
   highlight?: boolean;
   parentAuthorName?: string | null;
   userTags?: React.ReactNode;
+  media?: React.ReactNode;
 }
 
 const Comment: FunctionComponent<CommentProps> = props => {
@@ -65,6 +66,7 @@ const Comment: FunctionComponent<CommentProps> = props => {
         <HTMLContent className={CLASSES.comment.content}>
           {props.body || ""}
         </HTMLContent>
+        {props.media}
         {props.footer}
       </HorizontalGutter>
     </HorizontalGutter>

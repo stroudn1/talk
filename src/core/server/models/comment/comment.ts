@@ -35,6 +35,7 @@ import {
 import { PUBLISHED_STATUSES } from "./constants";
 import { CommentStatusCounts, createEmptyCommentStatusCounts } from "./counts";
 import { hasAncestors } from "./helpers";
+import { CommentMedia } from "./media";
 import { Revision } from "./revision";
 import { CommentTag } from "./tag";
 
@@ -108,6 +109,8 @@ export interface Comment extends TenantResource {
    */
   tags: CommentTag[];
 
+  media?: CommentMedia[];
+
   /**
    * childCount is the count of direct replies. It is stored as a separate value
    * here even though the childIDs field technically contained the same data in
@@ -137,6 +140,7 @@ export type CreateCommentInput = Omit<
   | "actionCounts"
   | "revisions"
   | "deletedAt"
+  | "media"
 > &
   Required<Pick<Revision, "body">> &
   Pick<Revision, "metadata"> &
@@ -167,6 +171,7 @@ export async function createComment(
     tenantID,
     childIDs: [],
     childCount: 0,
+    media: [],
     revisions: [revision],
     createdAt: now,
   };

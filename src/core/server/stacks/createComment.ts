@@ -56,7 +56,13 @@ import { publishChanges, updateAllCommentCounts } from "./helpers";
 
 export type CreateComment = Omit<
   CreateCommentInput,
-  "status" | "metadata" | "ancestorIDs" | "actionCounts" | "tags" | "siteID"
+  | "status"
+  | "metadata"
+  | "ancestorIDs"
+  | "actionCounts"
+  | "tags"
+  | "siteID"
+  | "media"
 >;
 
 const markCommentAsAnswered = async (

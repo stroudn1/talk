@@ -2240,6 +2240,10 @@ enum COMMENT_STATUS {
   SYSTEM_WITHHELD
 }
 
+enum COMMENT_MEDIA_PROVIDER {
+  GIPHY
+}
+
 type CommentModerationAction {
   id: ID!
 
@@ -2407,6 +2411,17 @@ type CommentTagCounts {
   UNANSWERED: Int!
 }
 
+type CommentMedia {
+  id: ID!
+  provider: COMMENT_MEDIA_PROVIDER!
+  url: String!
+  createdAt: Time!
+  width: Int!
+  height: Int!
+  mimetype: String!
+  alt: String!
+}
+
 """
 Comment is a comment left by a User on an Story or another Comment as a reply.
 """
@@ -2542,6 +2557,8 @@ type Comment {
   tags are the list of tags assigned to the Comment.
   """
   tags: [Tag!]!
+
+  media: [CommentMedia!]
 
   """
   deleted is whether the comment has been deleted.
@@ -6410,16 +6427,14 @@ type Mutation {
   """
   addStoryExpert adds an expert to a story.
   """
-  addStoryExpert(
-    input: AddExpertInput!
-  ): AddExpertPayload! @auth(roles: [ADMIN, MODERATOR])
+  addStoryExpert(input: AddExpertInput!): AddExpertPayload!
+    @auth(roles: [ADMIN, MODERATOR])
 
   """
   removeStoryExpert removes an expert from a story.
   """
-  removeStoryExpert(
-    input: RemoveExpertInput!
-  ): RemoveExpertPayload! @auth(roles: [ADMIN, MODERATOR])
+  removeStoryExpert(input: RemoveExpertInput!): RemoveExpertPayload!
+    @auth(roles: [ADMIN, MODERATOR])
 }
 
 ##################

@@ -33,6 +33,7 @@ import { CommentContainer_viewer as ViewerData } from "coral-stream/__generated_
 import { isPublished } from "../helpers";
 import UserBadgesContainer from "./AuthorBadgesContainer";
 import ButtonsBar from "./ButtonsBar";
+import CommentMediaContainer from "./CommentMediaContainer";
 import EditCommentFormContainer from "./EditCommentForm";
 import IndentedComment from "./IndentedComment";
 import CaretContainer, {
@@ -307,6 +308,7 @@ export class CommentContainer extends Component<Props, State> {
               blur={comment.pending || false}
               showEditedMarker={comment.editing.edited}
               highlight={highlight}
+              media={<CommentMediaContainer comment={comment} />}
               parentAuthorName={
                 comment.parent &&
                 comment.parent.author &&
@@ -514,6 +516,7 @@ const enhanced = withContext(({ eventEmitter }) => ({ eventEmitter }))(
             pending
             lastViewerAction
             deleted
+            ...CommentMediaContainer_comment
             ...ReplyCommentFormContainer_comment
             ...EditCommentFormContainer_comment
             ...ReactionButtonContainer_comment
