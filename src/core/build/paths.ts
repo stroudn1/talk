@@ -36,6 +36,7 @@ export default {
 
   appCountHTML: resolveSrc("core/client/count/index.html"),
   appCountIndex: resolveSrc("core/client/count/index.ts"),
+  customElementsIndex: resolveSrc("core/client/custom-elements/index.ts"),
 
   appInstallHTML: resolveSrc("core/client/install/index.html"),
   appInstallLocalesTemplate: resolveSrc("core/client/install/locales.ts"),

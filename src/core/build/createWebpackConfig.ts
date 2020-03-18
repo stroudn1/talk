@@ -776,5 +776,26 @@ export default function createWebpackConfig(
         ),
       ]),
     },
+    {
+      ...baseConfig,
+      optimization: {
+        ...baseConfig.optimization,
+        // Ensure that we never split the count into chunks.
+        splitChunks: {
+          chunks: "async",
+        },
+        // We can turn on sideEffects here as we don't use
+        // css here and don't run into: https://github.com/webpack/webpack/issues/7094
+        sideEffects: true,
+      },
+      entry: [paths.customElementsIndex],
+      output: {
+        ...baseConfig.output,
+        // don't hash the count, cache-busting must be completed by the requester
+        // as this lives in a static template on the embed site.
+        filename: "assets/js/custom-elements.js",
+      },
+      plugins: filterPlugins([...baseConfig.plugins!]),
+    },
   ];
 }

@@ -26,6 +26,13 @@ async function main() {
     pym,
   });
 
+  const s = document.createElement("script");
+  s.src = `${pym.parentUrl}/assets/js/custom-elements.js`;
+  // s.className = ORIGIN_FALLBACK_ID;
+  s.async = false;
+  s.defer = true;
+  (document.head || document.body).appendChild(s);
+
   const Index: FunctionComponent = () => (
     <ManagedCoralContextProvider>
       <AppContainer />
