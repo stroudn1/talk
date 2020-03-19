@@ -148,6 +148,7 @@ const RTE: FunctionComponent<RTEProps> = props => {
         onFocus={onFocus}
         {...rest}
       />
+      <pre>{value}</pre>
     </div>
   );
 };
