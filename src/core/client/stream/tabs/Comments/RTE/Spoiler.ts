@@ -42,6 +42,7 @@ function execCommand(this: API) {
     if (!span) {
       const node = document.createElement("span");
       node.classList.add("coral-spoiler");
+      node.classList.add("coral-spoiler-rte");
       node.innerHTML = "&#8203";
       insertNodes(node);
       let range = document.createRange();

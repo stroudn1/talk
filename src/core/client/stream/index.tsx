@@ -32,9 +32,9 @@ async function main() {
   s.async = false;
   s.defer = true;
   (document.head || document.body).appendChild(s);
-  const c = document.createElement("style");
-  c.innerText = ".coral-spoiler { background-color: green; }";
-  document.head.appendChild(c);
+  // const c = document.createElement("style");
+  // c.innerText = ".coral-spoiler { background-color: green; }";
+  // document.head.appendChild(c);
 
   const Index: FunctionComponent = () => (
     <ManagedCoralContextProvider>

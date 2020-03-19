@@ -1,5 +1,7 @@
 import createDOMPurify from "dompurify";
 
+const ALLOWED_CLASSNAMES = ["coral-spoiler"];
+
 type DOMPurify = ReturnType<typeof createDOMPurify>;
 
 export function createPurify(window: Window, returnDOM = true) {
@@ -12,7 +14,7 @@ export function createPurify(window: Window, returnDOM = true) {
     // spans.
     ALLOWED_TAGS: ["a", "b", "i", "blockquote", "br", "div", "span"],
     // Only allow href tags for anchor tags.
-    ALLOWED_ATTR: ["href"],
+    ALLOWED_ATTR: ["href", "class"],
     // Always return the DOM to the caller of sanitize.
     RETURN_DOM: returnDOM,
   });
@@ -20,6 +22,11 @@ export function createPurify(window: Window, returnDOM = true) {
   // Ensure that each anchor tag has a "target" and "rel" attributes set, and
   // strip the "href" attribute from all non-anchor tags.
   purify.addHook("afterSanitizeAttributes", node => {
+    node.classList.forEach(className => {
+      if (!ALLOWED_CLASSNAMES.includes(className)) {
+        node.classList.remove(className);
+      }
+    });
     if (node.nodeName === "A") {
       // Ensure we wrap all the links with the target + rel set.
       node.setAttribute("target", "_blank");
