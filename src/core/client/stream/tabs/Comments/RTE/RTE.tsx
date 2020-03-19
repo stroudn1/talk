@@ -6,6 +6,7 @@ import React, { EventHandler, FocusEvent, FunctionComponent, Ref } from "react";
 import CLASSES from "coral-stream/classes";
 import { Icon } from "coral-ui/components";
 import { PropTypesOf } from "coral-ui/types";
+import Spoiler from "./Spoiler";
 
 import styles from "./RTE.css";
 
@@ -95,6 +96,7 @@ const features = [
       <Icon size="md">format_quote</Icon>
     </Blockquote>
   </Localized>,
+  <Spoiler>spoiler</Spoiler>,
 ];
 
 const RTE: FunctionComponent<RTEProps> = props => {
