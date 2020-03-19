@@ -1,11 +1,6 @@
 .root {
 }
 
-:global(.coral-spoiler) {
-  background-color: blue;
-  color: blue;
-}
-
 .highlight {
   background-color: var(--palette-primary-lightest);
   padding: var(--mini-unit);
