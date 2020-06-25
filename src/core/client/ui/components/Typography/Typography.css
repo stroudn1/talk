@@ -4,76 +4,147 @@
 }
 
 .heading1 {
-  composes: heading1 from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-6);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-6);
+  color: var(--v2-colors-mono-500);
 }
 
 .heading2 {
-  composes: heading2 from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-5);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-5);
+  color: var(--v2-colors-mono-500);
 }
 
 .heading3 {
-  composes: heading3 from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-4);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-4);
+  color: var(--v2-colors-mono-500);
 }
 
 .heading4 {
-  composes: heading4 from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-3);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-3);
+  color: var(--v2-colors-mono-500);
 }
 
 .heading5 {
-  composes: heading5 from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-2);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-2);
+  color: var(--v2-colors-mono-500);
 }
 
 .header1 {
-  composes: header1 from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-6);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-6);
+  color: var(--v2-colors-mono-500);
 }
 
 .header2 {
-  composes: header2 from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-5);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-5);
+  color: var(--v2-colors-mono-500);
 }
 
 .header3 {
-  composes: header3 from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-4);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-4);
+  color: var(--v2-colors-mono-500);
 }
 
 .header4 {
-  composes: header4 from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-3);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-3);
+  color: var(--v2-colors-mono-500);
 }
 
 .header5 {
-  composes: header5 from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-2);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-2);
+  color: var(--v2-colors-mono-500);
 }
 
 .bodyCopy {
-  composes: bodyCopy from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-3);
+  font-weight: var(--v2-font-weight-primary-regular);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-4);
+  color: var(--v2-colors-mono-500);
 }
 
 .bodyCopyBold {
-  composes: bodyCopy from "~coral-ui/shared/typography.css";
-  font-weight: var(--font-weight-medium);
+  font-size: var(--v2-font-size-3);
+  font-weight: var(--v2-font-weight-primary-bold);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-4);
+  color: var(--v2-colors-mono-500);
 }
 
 .bodyShort {
-  composes: bodyShort from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-3);
+  font-weight: var(--v2-font-weight-primary-regular);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-4);
+  color: var(--v2-colors-mono-500);
 }
 
 .fieldDescription {
-  composes: fieldDescription from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-2);
+  font-weight: var(--v2-font-weight-primary-regular);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-3);
+  color: var(--v2-colors-mono-100);
 }
 
 .button {
-  composes: button from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-2);
+  font-weight: var(--v2-font-weight-primary-regular);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-4);
+  color: var(--v2-colors-mono-500);
 }
 
 .buttonLarge {
-  composes: buttonLarge from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-3);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-5);
+  color: var(--v2-colors-mono-500);
 }
 
 .detail {
-  composes: detail from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-2);
+  font-weight: var(--v2-font-weight-primary-regular);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-4);
+  color: var(--v2-colors-mono-500);
 }
 
 .timestamp {
-  composes: timestamp from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-2);
+  font-weight: var(--v2-font-weight-primary-regular);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-4);
+  color: var(--v2-colors-mono-100);
 }
 
 .alignLeft {
