@@ -8,10 +8,10 @@ import {
   required,
   validateEmail,
 } from "coral-framework/lib/validation";
-import { TextField } from "coral-ui/components";
 import {
   FormField,
   InputLabel,
+  TextField,
 } from "coral-ui/components/v2"
 
 interface Props {

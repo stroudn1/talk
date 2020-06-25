@@ -3,8 +3,8 @@ import { InvalidRequestError } from 'coral-framework/lib/errors';
 import { colorFromMeta, ValidationMessage } from 'coral-framework/lib/form';
 import { useMutation } from 'coral-framework/lib/relay';
 import { composeValidators, required, validateEmail } from 'coral-framework/lib/validation';
-import { Button, TextField, Typography } from 'coral-ui/components';
-import { CallOut, FormField, HorizontalGutter, InputLabel } from 'coral-ui/components/v2';
+import { Typography } from 'coral-ui/components';
+import { Button, CallOut, FormField, HorizontalGutter, InputLabel, TextField } from 'coral-ui/components/v2';
 import { FORM_ERROR } from 'final-form';
 import React, { FunctionComponent, useCallback } from 'react';
 import { Field, Form } from 'react-final-form';
@@ -87,8 +87,8 @@ const ForgotPasswordForm: FunctionComponent<Props> = (props) => {
                 </Field>
                 <Localized id="forgotPassword-sendEmailButton">
                   <Button
-                    variant="filled"
-                    color="primary"
+                    variant="regular"
+                    color="regular"
                     size="large"
                     fullWidth
                     type="submit"

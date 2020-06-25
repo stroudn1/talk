@@ -1,7 +1,6 @@
 import cn from 'classnames';
 import CLASSES from 'coral-stream/classes';
-import { TabContent, TabPane } from 'coral-ui/components';
-import { AriaInfo, HorizontalGutter } from 'coral-ui/components/v2';
+import { AriaInfo, HorizontalGutter, TabContent, TabPane } from 'coral-ui/components/v2';
 import React, { FunctionComponent } from 'react';
 
 import Comments from '../tabs/Comments';

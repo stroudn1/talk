@@ -1,5 +1,4 @@
-import { Button } from 'coral-ui/components';
-import { Box, Flex, CheckIcon } from 'coral-ui/components/v2';
+import { Button, Box, Flex, CheckIcon } from 'coral-ui/components/v2';
 import React, { FunctionComponent } from 'react';
 
 import { Localized } from '@fluent/react/compat';
@@ -31,8 +30,8 @@ const Success: FunctionComponent<Props> = ({ lastFocusableRef, onClose }) => (
       </Flex>
       <Localized id="community-invite-close">
         <Button
-          variant="filled"
-          color="primary"
+          variant="regular"
+          color="regular"
           onClick={onClose}
           ref={lastFocusableRef}
         >

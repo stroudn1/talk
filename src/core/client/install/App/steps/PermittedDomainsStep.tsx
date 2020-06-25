@@ -2,9 +2,9 @@ import {
     colorFromMeta, formatStringList, FormError, OnSubmit, parseStringList, ValidationMessage
 } from 'coral-framework/lib/form';
 import { validateStrictURLList } from 'coral-framework/lib/validation';
-import { Button, TextField, Typography } from 'coral-ui/components';
+import { Typography } from 'coral-ui/components';
 import {
-    CallOut, Flex, FormField, HorizontalGutter, InputDescription, InputLabel
+  Button, CallOut, Flex, FormField, HorizontalGutter, InputDescription, InputLabel, TextField
 } from 'coral-ui/components/v2';
 import { FORM_ERROR } from 'final-form';
 import React, { Component } from 'react';
@@ -109,9 +109,8 @@ class PermittedDomainsStep extends Component<Props> {
               <Flex direction="row-reverse" itemGutter>
                 <Localized id="install-permittedDomains-finishInstall">
                   <Button
-                    variant="filled"
-                    color="primary"
-                    size="large"
+                    variant="regular"
+                    color="regular"
                     type="submit"
                     disabled={submitting}
                   >

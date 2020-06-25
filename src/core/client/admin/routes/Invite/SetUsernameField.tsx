@@ -1,7 +1,6 @@
 import { colorFromMeta, ValidationMessage } from 'coral-framework/lib/form';
 import { composeValidators, required, validateUsername } from 'coral-framework/lib/validation';
-import { TextField } from 'coral-ui/components';
-import { FormField, InputDescription, InputLabel } from 'coral-ui/components/v2';
+import { FormField, InputDescription, InputLabel, TextField } from 'coral-ui/components/v2';
 import React, { FunctionComponent } from 'react';
 import { Field } from 'react-final-form';
 

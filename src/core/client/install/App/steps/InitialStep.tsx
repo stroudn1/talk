@@ -1,8 +1,8 @@
 import { Localized } from "@fluent/react/compat";
 import React, { Component } from "react";
 
-import { Button, Typography } from "coral-ui/components";
-import { Flex } from "coral-ui/components/v2";
+import { Typography } from "coral-ui/components";
+import { Button, Flex } from "coral-ui/components/v2";
 
 interface InitialStepProps {
   onGoToNextStep: () => void;
@@ -22,8 +22,8 @@ class InitialStep extends Component<InitialStepProps> {
           <Localized id="install-initialStep-getStarted">
             <Button
               onClick={this.props.onGoToNextStep}
-              color="primary"
-              variant="filled"
+              color="regular"
+              variant="regular"
               fullWidth={false}
             >
               Get Started
