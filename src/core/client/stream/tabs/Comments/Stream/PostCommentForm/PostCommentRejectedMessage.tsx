@@ -1,9 +1,10 @@
+import cn from "classnames";
 import { Localized } from "@fluent/react/compat";
 import React, { FunctionComponent } from "react";
 
 import CLASSES from "coral-stream/classes";
-import { Button } from "coral-ui/components";
 import { Flex, Message } from "coral-ui/components/v2";
+import { Button } from "coral-ui/components/v3";
 
 import styles from "./PostCommentRejectedMessage.css";
 
@@ -16,17 +17,18 @@ const PostCommentRejected: FunctionComponent<PostCommentRejectedProps> = (
 ) => {
   return (
     <Message color="error" className={CLASSES.createComment.rejected} fullWidth>
-      <Flex justifyContent="space-between" className={styles.flex}>
+      <Flex justifyContent="space-between" alignItems="center" className={styles.flex}>
         <Localized id="comments-submitStatus-submittedAndRejected">
           <div>This comment has been rejected for violating our guidelines</div>
         </Localized>
         <div className={styles.buttonWrapper}>
           <Localized id="comments-submitStatus-dismiss">
             <Button
-              className={CLASSES.createComment.dismissButton}
+              className={cn(CLASSES.createComment.dismissButton, styles.button)}
               onClick={props.onDismiss}
-              variant="underlined"
-              color="light"
+              variant="flat"
+              color="none"
+              underline
             >
               Dismiss
             </Button>

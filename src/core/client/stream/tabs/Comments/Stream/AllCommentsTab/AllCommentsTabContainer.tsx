@@ -23,8 +23,8 @@ import {
 } from 'coral-stream/__generated__/AllCommentsTabContainerPaginationQuery.graphql';
 import CLASSES from 'coral-stream/classes';
 import { LoadMoreAllCommentsEvent } from 'coral-stream/events';
-import { Button } from 'coral-ui/components';
 import { Box, HorizontalGutter } from 'coral-ui/components/v2';
+import { Button } from 'coral-ui/components/v3';
 import React, { FunctionComponent, useCallback, useEffect } from 'react';
 import { graphql, RelayPaginationProp } from 'react-relay';
 
@@ -221,7 +221,8 @@ export const AllCommentsTabContainer: FunctionComponent<Props> = (props) => {
           <Localized id="comments-loadMore">
             <Button
               onClick={loadMoreAndEmit}
-              variant="outlineFilled"
+              color="secondary"
+              variant="outlined"
               fullWidth
               disabled={isLoadingMore}
               aria-controls="comments-allComments-log"

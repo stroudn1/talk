@@ -15,8 +15,8 @@ import {
 } from 'coral-stream/__generated__/AnsweredCommentsContainerPaginationQuery.graphql';
 import CLASSES from 'coral-stream/classes';
 import { LoadMoreFeaturedCommentsEvent } from 'coral-stream/events';
-import { Button } from 'coral-ui/components';
 import { HorizontalGutter } from 'coral-ui/components/v2';
+import { Button } from 'coral-ui/components/v3';
 import React, { FunctionComponent, useCallback } from 'react';
 import { graphql, RelayPaginationProp } from 'react-relay';
 
@@ -76,6 +76,7 @@ export const AnsweredCommentsContainer: FunctionComponent<Props> = (props) => {
           <Button
             onClick={loadMoreAndEmit}
             variant="outlined"
+            color="secondary"
             fullWidth
             disabled={isLoadingMore}
             aria-controls="comments-featuredComments-log"

@@ -2,8 +2,8 @@ import cn from 'classnames';
 import FadeInTransition from 'coral-framework/components/FadeInTransition';
 import { PropTypesOf } from 'coral-framework/types';
 import CLASSES from 'coral-stream/classes';
-import { Button } from 'coral-ui/components';
 import { HorizontalGutter } from 'coral-ui/components/v2';
+import { Button } from 'coral-ui/components/v3';
 import React, { FunctionComponent } from 'react';
 
 import { Localized } from '@fluent/react/compat';
@@ -103,6 +103,7 @@ const ReplyList: FunctionComponent<ReplyListProps> = (props) => {
               onClick={props.onShowAll}
               disabled={props.disableShowAll}
               variant="outlined"
+              color="secondary"
               fullWidth
             >
               Show All Replies
@@ -118,6 +119,7 @@ const ReplyList: FunctionComponent<ReplyListProps> = (props) => {
               onClick={props.onViewNew}
               className={CLASSES.replyList.showMoreReplies}
               variant="outlined"
+              color="secondary"
               fullWidth
             >
               Show More Replies

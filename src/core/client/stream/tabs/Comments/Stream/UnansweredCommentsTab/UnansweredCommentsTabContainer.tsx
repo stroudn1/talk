@@ -22,8 +22,8 @@ import {
 } from 'coral-stream/__generated__/UnansweredCommentsTabContainerPaginationQuery.graphql';
 import CLASSES from 'coral-stream/classes';
 import { LoadMoreAllCommentsEvent } from 'coral-stream/events';
-import { Button } from 'coral-ui/components';
 import { Box, CallOut, HorizontalGutter } from 'coral-ui/components/v2';
+import { Button } from 'coral-ui/components/v3';
 import React, { FunctionComponent, useCallback, useEffect } from 'react';
 import { graphql, RelayPaginationProp } from 'react-relay';
 
@@ -207,7 +207,8 @@ export const UnansweredCommentsTabContainer: FunctionComponent<Props> = (
           <Localized id="comments-loadMore">
             <Button
               onClick={loadMoreAndEmit}
-              variant="outlineFilled"
+              variant="outlined"
+              color="secondary"
               fullWidth
               disabled={isLoadingMore}
               aria-controls="comments-allComments-log"

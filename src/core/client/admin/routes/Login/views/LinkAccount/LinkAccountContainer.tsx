@@ -7,8 +7,7 @@ import {
 import { colorFromMeta, FormError, OnSubmit, ValidationMessage } from 'coral-framework/lib/form';
 import { useLocal, useMutation, withFragmentContainer } from 'coral-framework/lib/relay';
 import { required } from 'coral-framework/lib/validation';
-import { Button, Typography } from 'coral-ui/components';
-import { CallOut, FormField, InputLabel, HorizontalGutter, PasswordField } from 'coral-ui/components/v2';
+import { Button, CallOut, FormField, InputLabel, HorizontalGutter, PasswordField } from 'coral-ui/components/v2';
 import { FORM_ERROR } from 'final-form';
 import React, { FunctionComponent, useCallback } from 'react';
 import { Field, Form } from 'react-final-form';
@@ -81,11 +80,11 @@ const LinkAccountContainer: FunctionComponent<Props> = (props) => {
                   $email={duplicateEmail}
                   strong={<strong />}
                 >
-                  <Typography variant="bodyCopy">
+                  <div>
                     The email <strong>{duplicateEmail}</strong> is already
                     associated with an account. If you would like to link these
                     enter your password.
-                  </Typography>
+                  </div>
                 </Localized>
                 {submitError && (
                   <CallOut color="error" fullWidth>
@@ -117,8 +116,8 @@ const LinkAccountContainer: FunctionComponent<Props> = (props) => {
                 </Field>
                 <Localized id="linkAccount-linkAccountButton">
                   <Button
-                    variant="filled"
-                    color="primary"
+                    variant="regular"
+                    color="regular"
                     size="large"
                     type="submit"
                     fullWidth
@@ -134,7 +133,8 @@ const LinkAccountContainer: FunctionComponent<Props> = (props) => {
         <OrSeparator />
         <Localized id="linkAccount-useDifferentEmail">
           <Button
-            variant="filled"
+            color="mono"
+            variant="regular"
             size="large"
             type="submit"
             fullWidth
