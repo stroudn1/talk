@@ -1,30 +1,18 @@
-import { Localized } from "@fluent/react/compat";
-import { FORM_ERROR } from "final-form";
-import React, { Component } from "react";
-import { Field, Form } from "react-final-form";
-
 import {
-  colorFromMeta,
-  formatStringList,
-  FormError,
-  OnSubmit,
-  parseStringList,
-  ValidationMessage,
-} from "coral-framework/lib/form";
-import { validateStrictURLList } from "coral-framework/lib/validation";
+    colorFromMeta, formatStringList, FormError, OnSubmit, parseStringList, ValidationMessage
+} from 'coral-framework/lib/form';
+import { validateStrictURLList } from 'coral-framework/lib/validation';
+import { Button, TextField, Typography } from 'coral-ui/components';
 import {
-  Button,
-  CallOut,
-  Flex,
-  FormField,
-  HorizontalGutter,
-  InputDescription,
-  InputLabel,
-  TextField,
-  Typography,
-} from "coral-ui/components";
+    CallOut, Flex, FormField, HorizontalGutter, InputDescription, InputLabel
+} from 'coral-ui/components/v2';
+import { FORM_ERROR } from 'final-form';
+import React, { Component } from 'react';
+import { Field, Form } from 'react-final-form';
 
-import BackButton from "./BackButton";
+import { Localized } from '@fluent/react/compat';
+
+import BackButton from './BackButton';
 
 interface FormProps {
   allowedOrigins: string[];
@@ -91,7 +79,7 @@ class PermittedDomainsStep extends Component<Props> {
                 {({ input, meta }) => (
                   <FormField>
                     <Localized id="install-permittedDomains-permittedDomains">
-                      <InputLabel container={<label htmlFor={input.name} />}>
+                      <InputLabel htmlFor={input.name}>
                         Permitted Domains
                       </InputLabel>
                     </Localized>

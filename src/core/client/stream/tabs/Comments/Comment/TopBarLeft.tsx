@@ -1,7 +1,6 @@
-import cn from "classnames";
-import React, { FunctionComponent } from "react";
-
-import { Flex, MatchMedia } from "coral-ui/components";
+import cn from 'classnames';
+import { Flex, MatchMedia } from 'coral-ui/components/v2';
+import React, { FunctionComponent } from 'react';
 
 export interface TopBarLeftProps {
   className?: string;

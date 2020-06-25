@@ -19,7 +19,7 @@ import React, {
 
 import { createSanitize } from "coral-common/helpers/sanitize";
 import CLASSES from "coral-stream/classes";
-import { Icon } from "coral-ui/components";
+import { Icon } from "coral-ui/components/v2";
 import { PropTypesOf } from "coral-ui/types";
 
 import styles from "./RTE.css";

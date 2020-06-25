@@ -1,33 +1,19 @@
-import { Localized } from "@fluent/react/compat";
-import React, { Component } from "react";
-import { Field, Form } from "react-final-form";
+import { colorFromMeta, OnSubmit, ValidationMessage } from 'coral-framework/lib/form';
+import {
+    composeValidators, required, validateEmail, validateEqualPasswords, validatePassword,
+    validateUsername
+} from 'coral-framework/lib/validation';
+import { TextField, Typography } from 'coral-ui/components';
+import {
+    CallOut, Flex, FormField, HorizontalGutter, InputDescription, InputLabel
+} from 'coral-ui/components/v2';
+import React, { Component } from 'react';
+import { Field, Form } from 'react-final-form';
 
-import {
-  colorFromMeta,
-  OnSubmit,
-  ValidationMessage,
-} from "coral-framework/lib/form";
-import {
-  composeValidators,
-  required,
-  validateEmail,
-  validateEqualPasswords,
-  validatePassword,
-  validateUsername,
-} from "coral-framework/lib/validation";
-import {
-  CallOut,
-  Flex,
-  FormField,
-  HorizontalGutter,
-  InputDescription,
-  InputLabel,
-  TextField,
-  Typography,
-} from "coral-ui/components";
+import { Localized } from '@fluent/react/compat';
 
-import BackButton from "./BackButton";
-import NextButton from "./NextButton";
+import BackButton from './BackButton';
+import NextButton from './NextButton';
 
 interface FormProps {
   email: string;
@@ -79,7 +65,7 @@ class CreateYourAccountStep extends Component<Props> {
                 {({ input, meta }) => (
                   <FormField>
                     <Localized id="install-createYourAccount-email">
-                      <InputLabel container={<label htmlFor={input.name} />}>
+                      <InputLabel htmlFor={input.name}>
                         Email
                       </InputLabel>
                     </Localized>
@@ -111,7 +97,7 @@ class CreateYourAccountStep extends Component<Props> {
                 {({ input, meta }) => (
                   <FormField>
                     <Localized id="install-createYourAccount-username">
-                      <InputLabel container={<label htmlFor={input.name} />}>
+                      <InputLabel htmlFor={input.name}>
                         Username
                       </InputLabel>
                     </Localized>
@@ -148,7 +134,7 @@ class CreateYourAccountStep extends Component<Props> {
                 {({ input, meta }) => (
                   <FormField>
                     <Localized id="install-createYourAccount-password">
-                      <InputLabel container={<label htmlFor={input.name} />}>
+                      <InputLabel htmlFor={input.name}>
                         Password
                       </InputLabel>
                     </Localized>
@@ -183,7 +169,7 @@ class CreateYourAccountStep extends Component<Props> {
                 {({ input, meta }) => (
                   <FormField>
                     <Localized id="install-createYourAccount-confirmPassword">
-                      <InputLabel container={<label htmlFor={input.name} />}>
+                      <InputLabel htmlFor={input.name}>
                         Confirm password
                       </InputLabel>
                     </Localized>

@@ -1,14 +1,14 @@
-import { Localized } from "@fluent/react/compat";
-import { Link } from "found";
-import React, { FunctionComponent, useState } from "react";
+import { Bar, SubBar, Title } from 'coral-auth/components/Header';
+import { Typography } from 'coral-ui/components';
+import { Flex } from 'coral-ui/components/v2';
+import { Link } from 'found';
+import React, { FunctionComponent, useState } from 'react';
 
-import { Bar, SubBar, Title } from "coral-auth/components/Header";
-import { Flex, Typography } from "coral-ui/components";
+import { Localized } from '@fluent/react/compat';
 
-import CheckEmail from "./CheckEmail";
-import ForgotPasswordForm from "./ForgotPasswordForm";
-
-import styles from "./ForgotPasswordContainer.css";
+import CheckEmail from './CheckEmail';
+import styles from './ForgotPasswordContainer.css';
+import ForgotPasswordForm from './ForgotPasswordForm';
 
 const ForgotPasswordContainer: FunctionComponent = () => {
   const [checkEmail, setCheckEmail] = useState<string | null>(null);

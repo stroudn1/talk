@@ -1,10 +1,9 @@
-import cn from "classnames";
-import React, { FunctionComponent, HTMLAttributes } from "react";
+import cn from 'classnames';
+import { Flex } from 'coral-ui/components/v2';
+import { withStyles } from 'coral-ui/hocs';
+import React, { FunctionComponent, HTMLAttributes } from 'react';
 
-import { Flex } from "coral-ui/components";
-import { withStyles } from "coral-ui/hocs";
-
-import styles from "./SubBar.css";
+import styles from './SubBar.css';
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;

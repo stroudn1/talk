@@ -6,7 +6,7 @@ import { oncePerFrame } from "coral-common/utils";
 import { withStyles } from "coral-ui/hocs";
 import { PropTypesOf } from "coral-ui/types";
 
-import { AriaInfo } from "coral-ui/components";
+import { AriaInfo } from "coral-ui/components/v2";
 
 import Arrow from "./Arrow";
 import styles from "./Popover.css";

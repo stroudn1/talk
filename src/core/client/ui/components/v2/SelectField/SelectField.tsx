@@ -2,7 +2,7 @@ import cn from "classnames";
 import React, { ChangeEvent, EventHandler, FocusEvent } from "react";
 import { FunctionComponent } from "react";
 
-import Icon from "coral-ui/components/Icon";
+import Icon from "coral-ui/components/v2/Icon";
 import { withKeyboardFocus, withStyles } from "coral-ui/hocs";
 
 import styles from "./SelectField.css";

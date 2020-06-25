@@ -1,22 +1,17 @@
-import { Localized } from "@fluent/react/compat";
-import React, { FunctionComponent, Suspense } from "react";
-import { Field } from "react-final-form";
-import { graphql } from "react-relay";
+import { MarkdownEditor } from 'coral-framework/components/loadables';
+import { formatEmpty, parseEmptyAsNull } from 'coral-framework/lib/form';
+import CLASSES from 'coral-stream/classes';
+import FieldValidationMessage from 'coral-stream/common/FieldValidationMessage';
+import { MessageBox, MessageBoxContent, MessageBoxIcon } from 'coral-stream/common/MessageBox';
+import { TileOption, TileSelector, Typography } from 'coral-ui/components';
+import { AriaInfo, HorizontalGutter, Icon, Spinner } from 'coral-ui/components/v2';
+import React, { FunctionComponent, Suspense } from 'react';
+import { Field } from 'react-final-form';
+import { graphql } from 'react-relay';
 
-import { MarkdownEditor } from "coral-framework/components/loadables";
-import { formatEmpty, parseEmptyAsNull } from "coral-framework/lib/form";
-import CLASSES from "coral-stream/classes";
-import FieldValidationMessage from "coral-stream/common/FieldValidationMessage";
-import {
-  MessageBox,
-  MessageBoxContent,
-  MessageBoxIcon,
-} from "coral-stream/common/MessageBox";
-import Spinner from "coral-stream/common/Spinner";
-import { TileOption, TileSelector, Typography } from "coral-ui/components";
-import { AriaInfo, HorizontalGutter, Icon } from "coral-ui/components/v2";
+import { Localized } from '@fluent/react/compat';
 
-import styles from "./MessageBoxConfig.css";
+import styles from './MessageBoxConfig.css';
 
 // eslint-disable-next-line no-unused-expressions
 graphql`

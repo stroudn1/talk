@@ -1,17 +1,14 @@
-import React, { useMemo } from "react";
-import { useForm } from "react-final-form";
-import { graphql } from "react-relay";
-
 import {
-  purgeMetadata,
-  withFragmentContainer,
-} from "coral-framework/lib/relay";
-import { HorizontalGutter } from "coral-ui/components";
+    WordListConfigContainer_settings as SettingsData
+} from 'coral-admin/__generated__/WordListConfigContainer_settings.graphql';
+import { purgeMetadata, withFragmentContainer } from 'coral-framework/lib/relay';
+import { HorizontalGutter } from 'coral-ui/components/v2';
+import React, { useMemo } from 'react';
+import { useForm } from 'react-final-form';
+import { graphql } from 'react-relay';
 
-import { WordListConfigContainer_settings as SettingsData } from "coral-admin/__generated__/WordListConfigContainer_settings.graphql";
-
-import BannedWordListConfig from "./BannedWordListConfig";
-import SuspectWordListConfig from "./SuspectWordListConfig";
+import BannedWordListConfig from './BannedWordListConfig';
+import SuspectWordListConfig from './SuspectWordListConfig';
 
 interface Props {
   submitting: boolean;

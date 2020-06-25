@@ -9,7 +9,7 @@ import React, {
 
 import { withStyles } from "coral-ui/hocs";
 
-import Icon from "coral-ui/components/Icon";
+import Icon from "coral-ui/components/v2/Icon";
 
 import styles from "./PasswordField.css";
 

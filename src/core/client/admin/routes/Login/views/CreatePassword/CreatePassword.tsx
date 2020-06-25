@@ -1,17 +1,13 @@
-import { Localized } from "@fluent/react/compat";
-import React, { FunctionComponent } from "react";
-import { Form } from "react-final-form";
+import { FormError, OnSubmit } from 'coral-framework/lib/form';
+import { Button, Typography } from 'coral-ui/components';
+import { CallOut, HorizontalGutter } from 'coral-ui/components/v2';
+import React, { FunctionComponent } from 'react';
+import { Form } from 'react-final-form';
 
-import { FormError, OnSubmit } from "coral-framework/lib/form";
-import {
-  Button,
-  CallOut,
-  HorizontalGutter,
-  Typography,
-} from "coral-ui/components";
+import { Localized } from '@fluent/react/compat';
 
-import CompleteAccountBox from "../../CompleteAccountBox";
-import SetPasswordField from "./SetPasswordField";
+import CompleteAccountBox from '../../CompleteAccountBox';
+import SetPasswordField from './SetPasswordField';
 
 interface FormProps {
   password: string;

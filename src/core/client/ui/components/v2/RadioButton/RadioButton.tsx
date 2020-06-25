@@ -1,11 +1,10 @@
-import cn from "classnames";
-import React, { ChangeEvent, Component, EventHandler, FocusEvent } from "react";
-import { v4 as uuid } from "uuid";
+import cn from 'classnames';
+import { Flex } from 'coral-ui/components/v2';
+import { withKeyboardFocus, withStyles } from 'coral-ui/hocs';
+import React, { ChangeEvent, Component, EventHandler, FocusEvent } from 'react';
+import { v4 as uuid } from 'uuid';
 
-import { Flex } from "coral-ui/components";
-import { withKeyboardFocus, withStyles } from "coral-ui/hocs";
-
-import styles from "./RadioButton.css";
+import styles from './RadioButton.css';
 
 export interface RadioButtonProps {
   id?: string;

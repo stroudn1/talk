@@ -5,7 +5,7 @@ import { withForwardRef, withStyles } from "coral-ui/hocs";
 import { PropTypesOf } from "coral-ui/types";
 
 /** Needs to be loaded after styles, because Box styles have priority */
-import Box from "../Box";
+import { Box } from "coral-ui/components/v2";
 
 /* In this case the Box styles have higher priority! */
 import styles from "./Typography.css";

@@ -1,16 +1,16 @@
-import { Localized } from "@fluent/react/compat";
-import cn from "classnames";
-import React, { FunctionComponent } from "react";
-import { graphql } from "react-relay";
+import cn from 'classnames';
+import { withFragmentContainer } from 'coral-framework/lib/relay';
+import {
+    ModerationActionBanContainer_user
+} from 'coral-stream/__generated__/ModerationActionBanContainer_user.graphql';
+import CLASSES from 'coral-stream/classes';
+import { DropdownButton, Icon, Spinner } from 'coral-ui/components/v2';
+import React, { FunctionComponent } from 'react';
+import { graphql } from 'react-relay';
 
-import { withFragmentContainer } from "coral-framework/lib/relay";
-import CLASSES from "coral-stream/classes";
-import Spinner from "coral-stream/common/Spinner";
-import { DropdownButton, Icon } from "coral-ui/components/v2";
+import { Localized } from '@fluent/react/compat';
 
-import { ModerationActionBanContainer_user } from "coral-stream/__generated__/ModerationActionBanContainer_user.graphql";
-
-import styles from "./ModerationActionBanContainer.css";
+import styles from './ModerationActionBanContainer.css';
 
 interface Props {
   /** user in question or null if still loading */

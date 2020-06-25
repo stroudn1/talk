@@ -1,23 +1,19 @@
-import { Localized } from "@fluent/react/compat";
-import { FORM_ERROR } from "final-form";
-import React, { FunctionComponent, useCallback } from "react";
-import { Form } from "react-final-form";
+import { InvalidRequestError } from 'coral-framework/lib/errors';
+import { useMutation } from 'coral-framework/lib/relay';
+import { Button, Typography } from 'coral-ui/components';
+import { CallOut, HorizontalGutter } from 'coral-ui/components/v2';
+import { FORM_ERROR } from 'final-form';
+import React, { FunctionComponent, useCallback } from 'react';
+import { Form } from 'react-final-form';
 
-import { InvalidRequestError } from "coral-framework/lib/errors";
-import { useMutation } from "coral-framework/lib/relay";
-import {
-  Button,
-  CallOut,
-  HorizontalGutter,
-  Typography,
-} from "coral-ui/components";
+import { Localized } from '@fluent/react/compat';
 
-import CompleteAccountBox from "../../CompleteAccountBox";
-import SetAuthViewMutation from "../../SetAuthViewMutation";
-import SetDuplicateEmailMutation from "../../SetDuplicateEmailMutation";
-import ConfirmEmailField from "./ConfirmEmailField";
-import EmailField from "./EmailField";
-import SetEmailMutation from "./SetEmailMutation";
+import CompleteAccountBox from '../../CompleteAccountBox';
+import SetAuthViewMutation from '../../SetAuthViewMutation';
+import SetDuplicateEmailMutation from '../../SetDuplicateEmailMutation';
+import ConfirmEmailField from './ConfirmEmailField';
+import EmailField from './EmailField';
+import SetEmailMutation from './SetEmailMutation';
 
 const AddEmailAddress: FunctionComponent = () => {
   const setDuplicateEmail = useMutation(SetDuplicateEmailMutation);

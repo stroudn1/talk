@@ -1,22 +1,16 @@
-import { Localized } from "@fluent/react/compat";
-import React, { FunctionComponent, useCallback } from "react";
-import { Field, Form } from "react-final-form";
+import { LanguageCode } from 'coral-common/helpers/i18n';
+import { LocaleField } from 'coral-framework/components';
+import { useCoralContext } from 'coral-framework/lib/bootstrap';
+import { OnSubmit, ValidationMessage } from 'coral-framework/lib/form';
+import { required } from 'coral-framework/lib/validation';
+import { Typography } from 'coral-ui/components';
+import { CallOut, Flex, FormField, InputLabel, HorizontalGutter } from 'coral-ui/components/v2';
+import React, { FunctionComponent, useCallback } from 'react';
+import { Field, Form } from 'react-final-form';
 
-import { LanguageCode } from "coral-common/helpers/i18n";
-import { LocaleField } from "coral-framework/components";
-import { useCoralContext } from "coral-framework/lib/bootstrap";
-import { OnSubmit, ValidationMessage } from "coral-framework/lib/form";
-import { required } from "coral-framework/lib/validation";
-import {
-  CallOut,
-  Flex,
-  FormField,
-  HorizontalGutter,
-  InputLabel,
-  Typography,
-} from "coral-ui/components";
+import { Localized } from '@fluent/react/compat';
 
-import NextButton from "./NextButton";
+import NextButton from './NextButton';
 
 interface FormProps {
   locale: string;
@@ -73,7 +67,7 @@ const SelectLanguageStep: FunctionComponent<Props> = (props) => {
               {({ input, meta }) => (
                 <FormField>
                   <Localized id="install-selectLanguage-language">
-                    <InputLabel container={<label htmlFor={input.name} />}>
+                    <InputLabel htmlFor={input.name}>
                       Language
                     </InputLabel>
                   </Localized>

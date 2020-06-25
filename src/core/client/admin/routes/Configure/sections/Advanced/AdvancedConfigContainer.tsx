@@ -1,18 +1,15 @@
-import React, { useMemo } from "react";
-import { useForm } from "react-final-form";
-import { graphql } from "react-relay";
-
 import {
-  purgeMetadata,
-  withFragmentContainer,
-} from "coral-framework/lib/relay";
-import { HorizontalGutter } from "coral-ui/components";
+    AdvancedConfigContainer_settings
+} from 'coral-admin/__generated__/AdvancedConfigContainer_settings.graphql';
+import { purgeMetadata, withFragmentContainer } from 'coral-framework/lib/relay';
+import { HorizontalGutter } from 'coral-ui/components/v2';
+import React, { useMemo } from 'react';
+import { useForm } from 'react-final-form';
+import { graphql } from 'react-relay';
 
-import { AdvancedConfigContainer_settings } from "coral-admin/__generated__/AdvancedConfigContainer_settings.graphql";
-
-import CommentStreamLiveUpdatesContainer from "./CommentStreamLiveUpdatesContainer";
-import CustomCSSConfig from "./CustomCSSConfig";
-import StoryCreationConfig from "./StoryCreationConfig";
+import CommentStreamLiveUpdatesContainer from './CommentStreamLiveUpdatesContainer';
+import CustomCSSConfig from './CustomCSSConfig';
+import StoryCreationConfig from './StoryCreationConfig';
 
 interface Props {
   submitting: boolean;

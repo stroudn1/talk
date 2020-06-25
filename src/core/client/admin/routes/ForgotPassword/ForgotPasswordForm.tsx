@@ -1,28 +1,17 @@
-import { Localized } from "@fluent/react/compat";
-import { FORM_ERROR } from "final-form";
-import React, { FunctionComponent, useCallback } from "react";
-import { Field, Form } from "react-final-form";
+import Main from 'coral-auth/components/Main';
+import { InvalidRequestError } from 'coral-framework/lib/errors';
+import { colorFromMeta, ValidationMessage } from 'coral-framework/lib/form';
+import { useMutation } from 'coral-framework/lib/relay';
+import { composeValidators, required, validateEmail } from 'coral-framework/lib/validation';
+import { Button, TextField, Typography } from 'coral-ui/components';
+import { CallOut, FormField, HorizontalGutter, InputLabel } from 'coral-ui/components/v2';
+import { FORM_ERROR } from 'final-form';
+import React, { FunctionComponent, useCallback } from 'react';
+import { Field, Form } from 'react-final-form';
 
-import Main from "coral-auth/components/Main";
-import { InvalidRequestError } from "coral-framework/lib/errors";
-import { colorFromMeta, ValidationMessage } from "coral-framework/lib/form";
-import { useMutation } from "coral-framework/lib/relay";
-import {
-  composeValidators,
-  required,
-  validateEmail,
-} from "coral-framework/lib/validation";
-import {
-  Button,
-  CallOut,
-  FormField,
-  HorizontalGutter,
-  InputLabel,
-  TextField,
-  Typography,
-} from "coral-ui/components";
+import { Localized } from '@fluent/react/compat';
 
-import ForgotPasswordMutation from "./ForgotPasswordMutation";
+import ForgotPasswordMutation from './ForgotPasswordMutation';
 
 interface FormProps {
   email: string;

@@ -1,20 +1,18 @@
-import { Localized } from "@fluent/react/compat";
-import React, { FunctionComponent } from "react";
-import { graphql } from "react-relay";
-
+import { QueryRenderData, QueryRenderer, withLocalStateContainer } from 'coral-framework/lib/relay';
 import {
-  QueryRenderData,
-  QueryRenderer,
-  withLocalStateContainer,
-} from "coral-framework/lib/relay";
-import Spinner from "coral-stream/common/Spinner";
-import { Flex } from "coral-ui/components";
+    UnansweredCommentsTabQuery as QueryTypes
+} from 'coral-stream/__generated__/UnansweredCommentsTabQuery.graphql';
+import {
+    UnansweredCommentsTabQueryLocal as Local
+} from 'coral-stream/__generated__/UnansweredCommentsTabQueryLocal.graphql';
+import { Flex, Spinner } from 'coral-ui/components/v2';
+import React, { FunctionComponent } from 'react';
+import { graphql } from 'react-relay';
 
-import { UnansweredCommentsTabQuery as QueryTypes } from "coral-stream/__generated__/UnansweredCommentsTabQuery.graphql";
-import { UnansweredCommentsTabQueryLocal as Local } from "coral-stream/__generated__/UnansweredCommentsTabQueryLocal.graphql";
+import { Localized } from '@fluent/react/compat';
 
-import SpinnerWhileRendering from "./SpinnerWhileRendering";
-import UnansweredCommentsTabContainer from "./UnansweredCommentsTabContainer";
+import SpinnerWhileRendering from './SpinnerWhileRendering';
+import UnansweredCommentsTabContainer from './UnansweredCommentsTabContainer';
 
 interface Props {
   local: Local;

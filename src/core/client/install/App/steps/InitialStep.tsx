@@ -1,7 +1,8 @@
 import { Localized } from "@fluent/react/compat";
 import React, { Component } from "react";
 
-import { Button, Flex, Typography } from "coral-ui/components";
+import { Button, Typography } from "coral-ui/components";
+import { Flex } from "coral-ui/components/v2";
 
 interface InitialStepProps {
   onGoToNextStep: () => void;

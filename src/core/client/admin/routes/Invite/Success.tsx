@@ -1,12 +1,13 @@
-import { Localized } from "@fluent/react/compat";
-import { Link } from "found";
-import React, { useMemo } from "react";
+import { parseAccessTokenClaims } from 'coral-framework/lib/auth/helpers';
+import { ExternalLink } from 'coral-framework/lib/i18n/components';
+import { Typography } from 'coral-ui/components';
+import { HorizontalGutter } from 'coral-ui/components/v2';
+import { Link } from 'found';
+import React, { useMemo } from 'react';
 
-import { parseAccessTokenClaims } from "coral-framework/lib/auth/helpers";
-import { ExternalLink } from "coral-framework/lib/i18n/components";
-import { HorizontalGutter, Typography } from "coral-ui/components";
+import { Localized } from '@fluent/react/compat';
 
-import styles from "./Success.css";
+import styles from './Success.css';
 
 interface Props {
   token: string;

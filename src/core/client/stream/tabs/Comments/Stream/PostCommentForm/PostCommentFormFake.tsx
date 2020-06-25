@@ -1,18 +1,18 @@
-import { Localized } from "@fluent/react/compat";
-import cn from "classnames";
-import React, { FunctionComponent, useCallback } from "react";
+import cn from 'classnames';
+import { useViewerEvent } from 'coral-framework/lib/events';
+import { GQLSTORY_MODE } from 'coral-framework/schema';
+import { PropTypesOf } from 'coral-framework/types';
+import CLASSES from 'coral-stream/classes';
+import { CreateCommentFocusEvent } from 'coral-stream/events';
+import { Button } from 'coral-ui/components';
+import { HorizontalGutter } from 'coral-ui/components/v2';
+import React, { FunctionComponent, useCallback } from 'react';
 
-import { useViewerEvent } from "coral-framework/lib/events";
-import { GQLSTORY_MODE } from "coral-framework/schema";
-import { PropTypesOf } from "coral-framework/types";
-import CLASSES from "coral-stream/classes";
-import { CreateCommentFocusEvent } from "coral-stream/events";
-import { Button, HorizontalGutter } from "coral-ui/components";
+import { Localized } from '@fluent/react/compat';
 
-import RTEContainer from "../../RTE";
-import MessageBoxContainer from "../MessageBoxContainer";
-
-import styles from "./PostCommentFormFake.css";
+import RTEContainer from '../../RTE';
+import MessageBoxContainer from '../MessageBoxContainer';
+import styles from './PostCommentFormFake.css';
 
 interface StorySettings {
   settings?: {

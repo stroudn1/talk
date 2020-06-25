@@ -1,12 +1,10 @@
-import cn from "classnames";
-import React, { FunctionComponent, ReactNode } from "react";
+import cn from 'classnames';
+import { HorizontalGutter } from 'coral-ui/components/v2';
+import { withStyles } from 'coral-ui/hocs';
+import { PropTypesOf } from 'coral-ui/types';
+import React, { FunctionComponent, ReactNode } from 'react';
 
-import { withStyles } from "coral-ui/hocs";
-import { PropTypesOf } from "coral-ui/types";
-
-import HorizontalGutter from "coral-ui/components/HorizontalGutter";
-
-import styles from "./FormFieldHeader.css";
+import styles from './FormFieldHeader.css';
 
 interface Props extends Omit<PropTypesOf<typeof HorizontalGutter>, "ref"> {
   children: ReactNode;

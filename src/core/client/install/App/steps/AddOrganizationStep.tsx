@@ -1,31 +1,18 @@
-import { Localized } from "@fluent/react/compat";
-import React from "react";
-import { Field, Form } from "react-final-form";
+import { colorFromMeta, OnSubmit, ValidationMessage } from 'coral-framework/lib/form';
+import {
+    composeValidators, required, validateEmail, validateURL
+} from 'coral-framework/lib/validation';
+import { TextField, Typography } from 'coral-ui/components';
+import {
+    CallOut, Flex, FormField, HorizontalGutter, InputDescription, InputLabel
+} from 'coral-ui/components/v2';
+import React from 'react';
+import { Field, Form } from 'react-final-form';
 
-import {
-  colorFromMeta,
-  OnSubmit,
-  ValidationMessage,
-} from "coral-framework/lib/form";
-import {
-  composeValidators,
-  required,
-  validateEmail,
-  validateURL,
-} from "coral-framework/lib/validation";
-import {
-  CallOut,
-  Flex,
-  FormField,
-  HorizontalGutter,
-  InputDescription,
-  InputLabel,
-  TextField,
-  Typography,
-} from "coral-ui/components";
+import { Localized } from '@fluent/react/compat';
 
-import BackButton from "./BackButton";
-import NextButton from "./NextButton";
+import BackButton from './BackButton';
+import NextButton from './NextButton';
 
 interface Props {
   onGoToNextStep: () => void;
@@ -85,7 +72,7 @@ class AddOrganizationStep extends React.Component<Props> {
                 {({ input, meta }) => (
                   <FormField>
                     <Localized id="install-addOrganization-orgName">
-                      <InputLabel container={<label htmlFor={input.name} />}>
+                      <InputLabel htmlFor={input.name}>
                         Organization name
                       </InputLabel>
                     </Localized>
@@ -114,7 +101,7 @@ class AddOrganizationStep extends React.Component<Props> {
                 {({ input, meta }) => (
                   <FormField>
                     <Localized id="install-addSite-siteEmail">
-                      <InputLabel container={<label htmlFor={input.name} />}>
+                      <InputLabel htmlFor={input.name}>
                         Contact email
                       </InputLabel>
                     </Localized>
@@ -146,7 +133,7 @@ class AddOrganizationStep extends React.Component<Props> {
                 {({ input, meta }) => (
                   <FormField>
                     <Localized id="install-addSite-siteURL">
-                      <InputLabel container={<label htmlFor={input.name} />}>
+                      <InputLabel htmlFor={input.name}>
                         Organization URL
                       </InputLabel>
                     </Localized>
@@ -181,7 +168,7 @@ class AddOrganizationStep extends React.Component<Props> {
                 {({ input, meta }) => (
                   <FormField>
                     <Localized id="install-addSite-siteName">
-                      <InputLabel container={<label htmlFor={input.name} />}>
+                      <InputLabel htmlFor={input.name}>
                         Site name
                       </InputLabel>
                     </Localized>

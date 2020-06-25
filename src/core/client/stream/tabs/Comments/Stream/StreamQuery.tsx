@@ -1,22 +1,16 @@
-import { Localized } from "@fluent/react/compat";
-import React, { FunctionComponent } from "react";
-import { graphql } from "react-relay";
+import { QueryRenderData, QueryRenderer, withLocalStateContainer } from 'coral-framework/lib/relay';
+import { COMMENTS_TAB } from 'coral-stream/__generated__/StreamContainerLocal.graphql';
+import { StreamQuery as QueryTypes } from 'coral-stream/__generated__/StreamQuery.graphql';
+import { StreamQueryLocal as Local } from 'coral-stream/__generated__/StreamQueryLocal.graphql';
+import useHandleIncompleteAccount from 'coral-stream/common/useHandleIncompleteAccount';
+import { Delay, Flex, Spinner } from 'coral-ui/components/v2';
+import React, { FunctionComponent } from 'react';
+import { graphql } from 'react-relay';
 
-import {
-  QueryRenderData,
-  QueryRenderer,
-  withLocalStateContainer,
-} from "coral-framework/lib/relay";
-import Spinner from "coral-stream/common/Spinner";
-import useHandleIncompleteAccount from "coral-stream/common/useHandleIncompleteAccount";
-import { Delay, Flex } from "coral-ui/components";
+import { Localized } from '@fluent/react/compat';
 
-import { COMMENTS_TAB } from "coral-stream/__generated__/StreamContainerLocal.graphql";
-import { StreamQuery as QueryTypes } from "coral-stream/__generated__/StreamQuery.graphql";
-import { StreamQueryLocal as Local } from "coral-stream/__generated__/StreamQueryLocal.graphql";
-
-import { AllCommentsTabQuery } from "./AllCommentsTab";
-import StreamContainer from "./StreamContainer";
+import { AllCommentsTabQuery } from './AllCommentsTab';
+import StreamContainer from './StreamContainer';
 
 interface Props {
   local: Local;

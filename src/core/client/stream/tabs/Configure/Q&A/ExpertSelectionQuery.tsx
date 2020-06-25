@@ -1,12 +1,12 @@
-import React, { FunctionComponent } from "react";
-import { graphql } from "react-relay";
+import { QueryRenderer } from 'coral-framework/lib/relay';
+import {
+    ExpertSelectionQuery as QueryTypes
+} from 'coral-stream/__generated__/ExpertSelectionQuery.graphql';
+import { Flex, Spinner } from 'coral-ui/components/v2';
+import React, { FunctionComponent } from 'react';
+import { graphql } from 'react-relay';
 
-import { QueryRenderer } from "coral-framework/lib/relay";
-import { Flex, Spinner } from "coral-ui/components";
-
-import { ExpertSelectionQuery as QueryTypes } from "coral-stream/__generated__/ExpertSelectionQuery.graphql";
-
-import ExpertSelectionContainer from "./ExpertSelectionContainer";
+import ExpertSelectionContainer from './ExpertSelectionContainer';
 
 interface Props {
   storyID: string;

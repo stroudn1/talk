@@ -1,38 +1,25 @@
-import { Localized } from "@fluent/react/compat";
-import { FORM_ERROR } from "final-form";
-import React, { FunctionComponent, useCallback } from "react";
-import { Field, Form } from "react-final-form";
-import { graphql } from "react-relay";
-
 import {
-  colorFromMeta,
-  FormError,
-  OnSubmit,
-  ValidationMessage,
-} from "coral-framework/lib/form";
+    LinkAccountContainer_viewer
+} from 'coral-admin/__generated__/LinkAccountContainer_viewer.graphql';
 import {
-  useLocal,
-  useMutation,
-  withFragmentContainer,
-} from "coral-framework/lib/relay";
-import { required } from "coral-framework/lib/validation";
-import {
-  Button,
-  CallOut,
-  FormField,
-  HorizontalGutter,
-  InputLabel,
-  PasswordField,
-  Typography,
-} from "coral-ui/components";
+    LinkAccountContainerLocal
+} from 'coral-admin/__generated__/LinkAccountContainerLocal.graphql';
+import { colorFromMeta, FormError, OnSubmit, ValidationMessage } from 'coral-framework/lib/form';
+import { useLocal, useMutation, withFragmentContainer } from 'coral-framework/lib/relay';
+import { required } from 'coral-framework/lib/validation';
+import { Button, Typography } from 'coral-ui/components';
+import { CallOut, FormField, InputLabel, HorizontalGutter, PasswordField } from 'coral-ui/components/v2';
+import { FORM_ERROR } from 'final-form';
+import React, { FunctionComponent, useCallback } from 'react';
+import { Field, Form } from 'react-final-form';
+import { graphql } from 'react-relay';
 
-import { LinkAccountContainer_viewer } from "coral-admin/__generated__/LinkAccountContainer_viewer.graphql";
-import { LinkAccountContainerLocal } from "coral-admin/__generated__/LinkAccountContainerLocal.graphql";
+import { Localized } from '@fluent/react/compat';
 
-import CompleteAccountBox from "../../CompleteAccountBox";
-import SetAuthViewMutation from "../../SetAuthViewMutation";
-import LinkAccountMutation from "./LinkAccountMutation";
-import OrSeparator from "./OrSeparator";
+import CompleteAccountBox from '../../CompleteAccountBox';
+import SetAuthViewMutation from '../../SetAuthViewMutation';
+import LinkAccountMutation from './LinkAccountMutation';
+import OrSeparator from './OrSeparator';
 
 interface FormProps {
   password: string;

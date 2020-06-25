@@ -1,9 +1,10 @@
-import { Localized } from "@fluent/react/compat";
-import React, { FunctionComponent } from "react";
+import { Button } from 'coral-ui/components';
+import { Box, Flex, CheckIcon } from 'coral-ui/components/v2';
+import React, { FunctionComponent } from 'react';
 
-import { Box, Button, CheckIcon, Flex } from "coral-ui/components";
+import { Localized } from '@fluent/react/compat';
 
-import * as styles from "./Success.css";
+import * as styles from './Success.css';
 
 interface Props {
   onClose: () => void;

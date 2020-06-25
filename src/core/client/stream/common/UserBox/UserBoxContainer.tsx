@@ -1,30 +1,28 @@
-import React, { Component } from "react";
-import { graphql } from "react-relay";
-
-import { urls } from "coral-framework/helpers";
+import { urls } from 'coral-framework/helpers';
 import {
-  MutationProp,
-  withFragmentContainer,
-  withLocalStateContainer,
-  withMutation,
-} from "coral-framework/lib/relay";
+    MutationProp, withFragmentContainer, withLocalStateContainer, withMutation
+} from 'coral-framework/lib/relay';
 import {
-  ShowAuthPopupMutation,
-  SignOutMutation,
-  withShowAuthPopupMutation,
-} from "coral-stream/mutations";
-import { Popup } from "coral-ui/components";
-
-import { UserBoxContainer_settings as SettingsData } from "coral-stream/__generated__/UserBoxContainer_settings.graphql";
-import { UserBoxContainer_viewer as ViewerData } from "coral-stream/__generated__/UserBoxContainer_viewer.graphql";
-import { UserBoxContainerLocal as Local } from "coral-stream/__generated__/UserBoxContainerLocal.graphql";
+    UserBoxContainer_settings as SettingsData
+} from 'coral-stream/__generated__/UserBoxContainer_settings.graphql';
+import {
+    UserBoxContainer_viewer as ViewerData
+} from 'coral-stream/__generated__/UserBoxContainer_viewer.graphql';
+import {
+    UserBoxContainerLocal as Local
+} from 'coral-stream/__generated__/UserBoxContainerLocal.graphql';
+import {
+    ShowAuthPopupMutation, SignOutMutation, withShowAuthPopupMutation
+} from 'coral-stream/mutations';
+import { Popup } from 'coral-ui/components/v2';
+import React, { Component } from 'react';
+import { graphql } from 'react-relay';
 
 import {
-  SetAuthPopupStateMutation,
-  withSetAuthPopupStateMutation,
-} from "./SetAuthPopupStateMutation";
-import UserBoxAuthenticated from "./UserBoxAuthenticated";
-import UserBoxUnauthenticated from "./UserBoxUnauthenticated";
+    SetAuthPopupStateMutation, withSetAuthPopupStateMutation
+} from './SetAuthPopupStateMutation';
+import UserBoxAuthenticated from './UserBoxAuthenticated';
+import UserBoxUnauthenticated from './UserBoxUnauthenticated';
 
 interface Props {
   local: Local;

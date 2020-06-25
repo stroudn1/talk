@@ -6,10 +6,10 @@ import { withForwardRef, withStyles } from "coral-ui/hocs";
 import { Spacing } from "coral-ui/theme/variables";
 import { PropTypesOf } from "coral-ui/types";
 
+import styles from "./Flex.css";
+
 /** Needs to be loaded after styles, because Box styles have priority */
 import Box from "../Box";
-
-import styles from "./Flex.css";
 
 interface Props extends Omit<PropTypesOf<typeof Box>, "ref"> {
   /**

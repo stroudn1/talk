@@ -2,7 +2,8 @@ import { Localized } from "@fluent/react/compat";
 import React, { FunctionComponent } from "react";
 
 import CLASSES from "coral-stream/classes";
-import { Button, Flex, Message } from "coral-ui/components";
+import { Button } from "coral-ui/components";
+import { Flex, Message } from "coral-ui/components/v2";
 
 import styles from "./PostCommentRejectedMessage.css";
 

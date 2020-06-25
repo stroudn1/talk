@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react";
 
 import { FieldMeta, hasError } from "coral-framework/lib/form/helpers";
 
-import { ValidationMessage as UIValidationMessage } from "coral-ui/components";
+import { ValidationMessage as UIValidationMessage } from "coral-ui/components/v2";
 import { ValidationMessageProps } from "coral-ui/components/ValidationMessage";
 
 interface Props extends Omit<ValidationMessageProps, "children"> {

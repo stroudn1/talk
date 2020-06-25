@@ -4,7 +4,7 @@ import { graphql } from "react-relay";
 
 import { SlackConfigRouteQueryResponse } from "coral-admin/__generated__/SlackConfigRouteQuery.graphql";
 import { withRouteConfig } from "coral-framework/lib/router";
-import { Delay, Spinner } from "coral-ui/components";
+import { Delay, Spinner } from "coral-ui/components/v2";
 
 import SlackConfigContainer from "./SlackConfigContainer";
 

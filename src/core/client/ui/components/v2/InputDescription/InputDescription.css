@@ -1,0 +1,8 @@
+.root {
+  color: var(--palette-text-secondary);
+
+  font-size: var(--font-size-rem-3);
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-sans-serif);
+  line-height: var(--line-height-body-short);
+}

@@ -10,12 +10,10 @@ import React, {
 
 import TIME from "coral-common/time";
 import {
-  Flex,
-  Option,
-  SelectField,
   TextField,
   Typography,
 } from "coral-ui/components";
+import { Flex, SelectField, Option } from "coral-ui/components/v2";
 
 import styles from "./DurationField.css";
 

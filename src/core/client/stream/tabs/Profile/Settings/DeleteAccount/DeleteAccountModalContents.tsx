@@ -1,16 +1,14 @@
-import cn from "classnames";
-import React, { FunctionComponent, useCallback, useState } from "react";
+import cn from 'classnames';
+import CLASSES from 'coral-stream/classes';
+import { Box } from 'coral-ui/components/v2';
+import React, { FunctionComponent, useCallback, useState } from 'react';
 
-import CLASSES from "coral-stream/classes";
-import { Box } from "coral-ui/components";
-
-import CompletionPage from "./Pages/CompletionPage";
-import ConfirmPage from "./Pages/ConfirmPage";
-import DescriptionPage from "./Pages/DescriptionPage";
-import DownloadCommentsPage from "./Pages/DownloadCommentsPage";
-import WhenPage from "./Pages/WhenPage";
-
-import styles from "./DeleteAccountModal.css";
+import styles from './DeleteAccountModal.css';
+import CompletionPage from './Pages/CompletionPage';
+import ConfirmPage from './Pages/ConfirmPage';
+import DescriptionPage from './Pages/DescriptionPage';
+import DownloadCommentsPage from './Pages/DownloadCommentsPage';
+import WhenPage from './Pages/WhenPage';
 
 interface Props {
   userID: string;

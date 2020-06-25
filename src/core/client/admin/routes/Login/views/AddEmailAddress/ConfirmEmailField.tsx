@@ -8,7 +8,11 @@ import {
   required,
   validateEqualEmails,
 } from "coral-framework/lib/validation";
-import { FormField, InputLabel, TextField } from "coral-ui/components";
+import { TextField } from "coral-ui/components";
+import {
+  FormField,
+  InputLabel
+} from "coral-ui/components/v2"
 
 interface Props {
   disabled: boolean;

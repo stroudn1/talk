@@ -1,11 +1,10 @@
-import React, { FunctionComponent } from "react";
-import { graphql } from "react-relay";
-
-import { QueryRenderData, QueryRenderer } from "coral-framework/lib/relay";
-import Spinner from "coral-stream/common/Spinner";
-import { Delay } from "coral-ui/components";
-
-import { SiteSelectorCurrentSiteQuery as QueryTypes } from "coral-admin/__generated__/SiteSelectorCurrentSiteQuery.graphql";
+import {
+    SiteSelectorCurrentSiteQuery as QueryTypes
+} from 'coral-admin/__generated__/SiteSelectorCurrentSiteQuery.graphql';
+import { QueryRenderData, QueryRenderer } from 'coral-framework/lib/relay';
+import { Delay, Spinner } from 'coral-ui/components/v2';
+import React, { FunctionComponent } from 'react';
+import { graphql } from 'react-relay';
 
 interface Props {
   siteID: string;

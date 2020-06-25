@@ -1,9 +1,8 @@
-import cn from "classnames";
-import React, { FunctionComponent, ReactElement, useCallback } from "react";
+import cn from 'classnames';
+import { Flex } from 'coral-ui/components/v2';
+import React, { FunctionComponent, ReactElement, useCallback } from 'react';
 
-import { Flex } from "coral-ui/components";
-
-import styles from "./TileSelector.css";
+import styles from './TileSelector.css';
 
 export interface SelectorChildProps {
   id?: string;

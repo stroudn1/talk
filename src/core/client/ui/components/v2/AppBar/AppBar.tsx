@@ -1,10 +1,9 @@
-import cn from "classnames";
-import React, { FunctionComponent } from "react";
+import cn from 'classnames';
+import { Flex } from 'coral-ui/components/v2';
+import { withStyles } from 'coral-ui/hocs';
+import React, { FunctionComponent } from 'react';
 
-import { Flex } from "coral-ui/components";
-import { withStyles } from "coral-ui/hocs";
-
-import styles from "./AppBar.css";
+import styles from './AppBar.css';
 
 interface Props {
   children?: React.ReactNode;
