@@ -1,5 +1,4 @@
-import { Typography } from 'coral-ui/components';
-import { CallOut, HorizontalGutter } from 'coral-ui/components/v2';
+import { CallOut, HorizontalGutter, Typography } from 'coral-ui/components/v2';
 import React from 'react';
 
 import { Localized } from '@fluent/react/compat';

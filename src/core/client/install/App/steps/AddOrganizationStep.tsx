@@ -2,9 +2,8 @@ import { colorFromMeta, OnSubmit, ValidationMessage } from 'coral-framework/lib/
 import {
     composeValidators, required, validateEmail, validateURL
 } from 'coral-framework/lib/validation';
-import { Typography } from 'coral-ui/components';
 import {
-    CallOut, Flex, FormField, HorizontalGutter, InputDescription, InputLabel, TextField
+    CallOut, Flex, FormField, HorizontalGutter, InputDescription, InputLabel, TextField, Typography
 } from 'coral-ui/components/v2';
 import React from 'react';
 import { Field, Form } from 'react-final-form';

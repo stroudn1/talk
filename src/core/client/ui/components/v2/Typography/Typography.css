@@ -214,11 +214,19 @@
 }
 
 .inputLabel {
-  composes: inputLabel from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-4);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-3);
+  color: var(--v2-colors-mono-500);
 }
 
 /* V2 Typography */
 
 .bodyCommentV2 {
-  composes: bodyCommentV2 from "~coral-ui/shared/typography.css";
+  font-size: var(--v2-font-size-3);
+  font-weight: var(--v2-font-weight-primary-regular);
+  font-family: var(--v2-font-family-primary);
+  line-height: var(--v2-line-height-body-comment);
+  color: var(--v2-palette-text-primary);
 }

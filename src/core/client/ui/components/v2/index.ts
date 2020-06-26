@@ -79,3 +79,5 @@ export { StepBar, Step } from "./Steps";
 export { default as CheckIcon } from "./CheckIcon";
 export { default as InputDescription } from "./InputDescription";
 export { default as Popup } from "./Popup";
+export { default as Typography } from "./Typography";
+export { TileSelector, Option as TileOption } from "./TileSelector";

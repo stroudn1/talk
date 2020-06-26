@@ -2,9 +2,8 @@ import {
     colorFromMeta, formatStringList, FormError, OnSubmit, parseStringList, ValidationMessage
 } from 'coral-framework/lib/form';
 import { validateStrictURLList } from 'coral-framework/lib/validation';
-import { Typography } from 'coral-ui/components';
 import {
-  Button, CallOut, Flex, FormField, HorizontalGutter, InputDescription, InputLabel, TextField
+  Button, CallOut, Flex, FormField, HorizontalGutter, InputDescription, InputLabel, TextField, Typography
 } from 'coral-ui/components/v2';
 import { FORM_ERROR } from 'final-form';
 import React, { Component } from 'react';

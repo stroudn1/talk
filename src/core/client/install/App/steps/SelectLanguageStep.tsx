@@ -3,8 +3,7 @@ import { LocaleField } from 'coral-framework/components';
 import { useCoralContext } from 'coral-framework/lib/bootstrap';
 import { OnSubmit, ValidationMessage } from 'coral-framework/lib/form';
 import { required } from 'coral-framework/lib/validation';
-import { Typography } from 'coral-ui/components';
-import { CallOut, Flex, FormField, InputLabel, HorizontalGutter } from 'coral-ui/components/v2';
+import { CallOut, Flex, FormField, InputLabel, HorizontalGutter, Typography } from 'coral-ui/components/v2';
 import React, { FunctionComponent, useCallback } from 'react';
 import { Field, Form } from 'react-final-form';
 

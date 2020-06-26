@@ -1,7 +1,7 @@
 import cn from "classnames";
 import React, { FunctionComponent, ReactNode } from "react";
 
-import { Typography } from "coral-ui/components";
+import Typography from "../Typography";
 import { PropTypesOf } from "coral-ui/types";
 
 import styles from "./InputDescription.css";

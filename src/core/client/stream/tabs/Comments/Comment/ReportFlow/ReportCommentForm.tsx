@@ -170,10 +170,7 @@ class ReportCommentForm extends React.Component<Props> {
                             id="comments-reportPopover-maxCharacters"
                             $maxCharacters={500}
                           >
-                            <div
-                              color="textSecondary"
-                              className={styles.textareaInfo}
-                            >
+                            <div className={styles.textareaInfo}>
                               Max. 500 Characters
                             </div>
                           </Localized>

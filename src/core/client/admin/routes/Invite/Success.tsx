@@ -1,7 +1,6 @@
 import { parseAccessTokenClaims } from 'coral-framework/lib/auth/helpers';
 import { ExternalLink } from 'coral-framework/lib/i18n/components';
-import { Typography } from 'coral-ui/components';
-import { HorizontalGutter } from 'coral-ui/components/v2';
+import { HorizontalGutter, Typography } from 'coral-ui/components/v2';
 import { Link } from 'found';
 import React, { useMemo } from 'react';
 

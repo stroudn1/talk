@@ -9,10 +9,7 @@ import React, {
 } from "react";
 
 import TIME from "coral-common/time";
-import {
-  Typography,
-} from "coral-ui/components";
-import { Flex, SelectField, Option, TextField, } from "coral-ui/components/v2";
+import { Flex, SelectField, Option, TextField, Typography } from "coral-ui/components/v2";
 
 import styles from "./DurationField.css";
 

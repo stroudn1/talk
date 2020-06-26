@@ -1,8 +1,7 @@
 import { parseAccessTokenClaims } from 'coral-framework/lib/auth/helpers';
 import { InvalidRequestError } from 'coral-framework/lib/errors';
 import { useMutation } from 'coral-framework/lib/relay';
-import { Typography } from 'coral-ui/components';
-import { Button, CallOut, Flex, HorizontalGutter } from 'coral-ui/components/v2';
+import { Button, CallOut, Flex, HorizontalGutter, Typography } from 'coral-ui/components/v2';
 import { FORM_ERROR } from 'final-form';
 import React, { useCallback, useMemo } from 'react';
 import { Form } from 'react-final-form';

@@ -3,8 +3,7 @@ import { Link } from "found";
 import React, { Component } from "react";
 
 import { urls } from "coral-framework/helpers";
-import { Typography } from "coral-ui/components";
-import { Button, Flex } from "coral-ui/components/v2";
+import { Button, Flex, Typography } from "coral-ui/components/v2";
 
 class FinalStep extends Component {
   public render() {

@@ -1,6 +1,5 @@
 import { Bar, SubBar, Title } from 'coral-auth/components/Header';
-import { Typography } from 'coral-ui/components';
-import { Flex } from 'coral-ui/components/v2';
+import { Flex, Typography } from 'coral-ui/components/v2';
 import { Link } from 'found';
 import React, { FunctionComponent, useState } from 'react';
 
