@@ -2,7 +2,7 @@ import React, { FunctionComponent, ReactNode } from "react";
 import Responsive, { MediaQueryMatchers } from "react-responsive";
 
 import { UIContext } from "coral-ui/components/v2";
-import theme from "coral-ui/theme/variables2";
+import theme from "coral-ui/theme/variables";
 import { PropTypesOf } from "coral-ui/types";
 
 type Breakpoints = keyof typeof theme.breakpoints;

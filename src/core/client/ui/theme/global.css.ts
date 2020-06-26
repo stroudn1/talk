@@ -13,7 +13,6 @@ import postcss from "postcss";
 import postcssJs from "postcss-js";
 
 import variables from "./variables";
-import variables2 from "./variables2";
 
 const flatKebabVariables = mapKeys(
   mapValues(flat(variables, { delimiter: "-" }), (v) => v.toString()),
@@ -26,23 +25,13 @@ const cssVariables = pickBy(
   (v, k) => !k.startsWith("breakpoints-")
 );
 
-const v2FlatKebabVariables = mapKeys(
-  mapValues(flat(variables2, { delimiter: "-" }), (v) => v.toString()),
-  (_, k) => `--v2-${kebabCase(k)}`
-);
-
-const cssVariablesV2 = pickBy(
-  v2FlatKebabVariables,
-  (v, k) => !k.startsWith("breakpoints-")
-);
-
 const typography = fs.readFileSync(path.join(__dirname, "./typography.css")).toString();
 const typographyObject = postcssJs.objectify(postcss.parse(typography));
 
 const cssObject = {
   ...typographyObject,
   ":root": {
-    ...Object.assign({}, cssVariables, cssVariablesV2),
+    ...cssVariables,
     "--mini-unit": "calc(1px * var(--mini-unit-small))",
   },
   [`@media (min-width: ${variables.breakpoints.xs}px)`]: {
