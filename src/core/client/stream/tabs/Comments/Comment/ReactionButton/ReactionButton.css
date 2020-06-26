@@ -1,6 +1,6 @@
 .readOnly {
   cursor: not-allowed !important;
-  color: var(--palette-text-primary) !important;
+  color: var(--v2-palette-text-primary) !important;
   opacity: 1 !important;
 }
 

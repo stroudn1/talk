@@ -5,7 +5,7 @@
   line-height: var(--v2-line-height-body-short);
   padding: var(--v2-spacing-2);
   box-sizing: border-box;
-  border-radius: var(--round-corners);
+  border-radius: var(--v2-round-corners);
   color: var(--v2-palette-input-value);
   background-color: var(--v2-palette-input-background);
   border: 1px solid var(--v2-palette-input-border);

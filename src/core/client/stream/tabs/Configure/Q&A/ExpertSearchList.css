@@ -28,10 +28,9 @@
 
   text-align: center;
 
-  color: var(--palette-text-dark);
-  font-size: calc(16rem / var(--rem-base));
-  font-weight: var(--font-weight-medium);
-  font-family: var(--font-family-sans-serif);
+  color: var(--v2-palette-text-dark);
+  font-size: var(--v2-font-size-3);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
+  font-family: var(--v2-font-family-primary);
   line-height: 1.375em;
-  letter-spacing: 0.0125em;
 }

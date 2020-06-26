@@ -60,7 +60,7 @@
 
   padding: 0 calc(1 * var(--mini-unit));
   height: calc(4 * var(--mini-unit) - 4px);
-  margin-right: var(--spacing-1);
+  margin-right: var(--v2-spacing-1);
 
   &:disabled {
     cursor: pointer;

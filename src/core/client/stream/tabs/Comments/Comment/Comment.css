@@ -5,7 +5,7 @@ $commentTimestampColor: var(--v2-colors-grey-500);
 }
 
 .highlight {
-  background-color: var(--palette-primary-lightest);
+  background-color: var(--v2-palette-primary-lightest);
   padding: var(--mini-unit);
 }
 .subBar {

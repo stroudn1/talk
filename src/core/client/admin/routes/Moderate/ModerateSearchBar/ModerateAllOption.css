@@ -17,7 +17,7 @@
 }
 
 .icon {
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
   margin-top: -2px;
 }
 

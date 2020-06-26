@@ -51,7 +51,7 @@
     background-color: var(--v2-palette-input-disabled-background);
   }
 
-  border-radius: var(--round-corners);
+  border-radius: var(--v2-round-corners);
   background-color: var(--v2-palette-input-background);
   border: 1px solid var(--v2-palette-input-border);
   padding: calc(var(--v2-spacing-2) - 2px) var(--v2-spacing-6)

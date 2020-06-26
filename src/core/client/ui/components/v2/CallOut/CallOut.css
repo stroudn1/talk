@@ -28,21 +28,21 @@ $callout-regular-border: var(--v2-colors-grey-300);
 }
 
 .colorPrimary {
-  background-color: var(--palette-primary-lightest);
-  border-color: var(--palette-primary-light);
-  color: var(--palette-text-primary);
+  background-color: var(--v2-palette-primary-lightest);
+  border-color: var(--v2-palette-primary-light);
+  color: var(--v2-palette-text-primary);
 }
 
 .colorError {
-  background-color: var(--palette-error-lightest);
-  border-color: var(--palette-error-light);
-  color: var(--palette-text-primary);
+  background-color: var(--v2-palette-error-lightest);
+  border-color: var(--v2-palette-error-light);
+  color: var(--v2-palette-text-primary);
 }
 
 .colorSuccess {
-  background-color: var(--palette-success-lightest);
-  border-color: var(--palette-success-light);
-  color: var(--palette-text-primary);
+  background-color: var(--v2-palette-success-lightest);
+  border-color: var(--v2-palette-success-light);
+  color: var(--v2-palette-text-primary);
 }
 
 .fullWidth {

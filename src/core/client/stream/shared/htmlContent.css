@@ -41,15 +41,15 @@ $commentsLinkColorHovered: var(--v2-colors-stream-blue-700);
     }
   }
   & :global(.coral-rte-spoiler) {
-    background-color: var(--palette-text-dark);
+    background-color: var(--v2-palette-text-dark);
     transition: background 300ms;
-    border-radius: var(--round-corners);
+    border-radius: var(--v2-round-corners);
     color: rgba(0, 0, 0, 0);
     cursor: pointer;
   }
   & :global(.coral-rte-spoiler-reveal) {
     opacity: 1.0;
-    color: var(--palette-text-dark);
+    color: var(--v2-palette-text-dark);
     background-color: transparent;
     cursor: text;
   }

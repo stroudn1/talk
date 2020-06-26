@@ -11,7 +11,7 @@ $moderate-background: var(--v2-colors-grey-100);
 }
 
 .main {
-  margin: var(--spacing-5) 0 var(--spacing-7) 0;
+  margin: var(--v2-spacing-5) 0 var(--v2-spacing-7) 0;
   display: flex;
   justify-content: center;
 }

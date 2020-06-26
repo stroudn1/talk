@@ -86,6 +86,9 @@ const colors = {
 
 const variables2 = {
   colors,
+  elevation: {
+    main: "1px 0px 4px rgba(0, 0, 0, 0.25)",
+  },
   palette: {
     text: {
       light: colors.white500,
@@ -103,11 +106,14 @@ const variables2 = {
       main: colors.grey500,
       lightest: colors.grey200,
       lighter: colors.grey300,
+      dark: colors.grey600,
       darkest: colors.grey700,
     },
     error: {
       lightest: colors.red100,
+      light: colors.red300,
       main: colors.red500,
+      dark: colors.red600,
       darkest: colors.red700,
     },
     success: {
@@ -178,6 +184,9 @@ const variables2 = {
       regular: 300,
     },
   },
+  /* gitter and spacing */
+  miniUnitSmall: 4,
+  miniUnitLarge: 8,
   spacing: {
     1: "4px",
     2: "8px",
@@ -196,6 +205,10 @@ const variables2 = {
     md: 1024,
     lg: 1400,
     xl: 1600,
+  },
+  zindex: {
+    popover: 300,
+    modal: 1000,
   },
 };
 

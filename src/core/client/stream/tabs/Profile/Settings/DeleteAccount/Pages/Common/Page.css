@@ -104,7 +104,7 @@
 }
 
 .proceedButton {
-  border: 1px solid var(--palette-primary-main);
+  border: 1px solid var(--v2-colors-stream-blue-500);
 
   float: right;
 }

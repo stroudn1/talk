@@ -4,8 +4,8 @@
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.25);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
-  border-radius: var(--round-corners);
-  background-color: var(--palette-common-white);
+  border-radius: var(--v2-round-corners);
+  background-color: var(--v2-colors-pure-white);
   /*
     Fallback begin
 

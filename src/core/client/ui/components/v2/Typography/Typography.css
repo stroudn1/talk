@@ -178,39 +178,39 @@
 }
 
 .colorPrimary {
-  color: var(--palette-primary-main);
+  color: var(--v2-palette-primary-main);
 }
 
 .colorTextPrimary {
-  color: var(--palette-text-primary);
+  color: var(--v2-palette-text-primary);
 }
 
 .colorTextSecondary {
-  color: var(--palette-text-secondary);
+  color: var(--v2-palette-text-secondary);
 }
 
 .colorTextDark {
-  color: var(--palette-text-dark);
+  color: var(--v2-palette-text-dark);
 }
 
 .colorTextLight {
-  color: var(--palette-text-light);
+  color: var(--v2-palette-text-light);
 }
 
 .colorError {
-  color: var(--palette-error-main);
+  color: var(--v2-palette-error-main);
 }
 
 .colorErrorDark {
-  color: var(--palette-error-dark);
+  color: var(--v2-palette-error-dark);
 }
 
 .colorWarning {
-  color: var(--palette-warning-main);
+  color: "#DC8400";
 }
 
 .colorSuccess {
-  color: var(--palette-success-darkest);
+  color: var(--v2-palette-success-main);
 }
 
 .inputLabel {

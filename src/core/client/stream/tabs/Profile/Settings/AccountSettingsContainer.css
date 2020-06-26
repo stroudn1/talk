@@ -1,4 +1,4 @@
 .root > * {
-  border-bottom: 1px solid var(--palette-divider);
-  padding-bottom: var(--spacing-3);
+  border-bottom: 1px solid var(--v2-palette-divider);
+  padding-bottom: var(--v2-spacing-3);
 }

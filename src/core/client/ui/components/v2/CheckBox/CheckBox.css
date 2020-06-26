@@ -25,7 +25,7 @@
 }
 
 .labelLight {
-  color: var(--palette-text-light);
+  color: var(--v2-palette-text-light);
 }
 
 /* Box. */

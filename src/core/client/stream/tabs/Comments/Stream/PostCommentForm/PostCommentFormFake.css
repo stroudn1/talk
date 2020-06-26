@@ -17,6 +17,6 @@
   width: 100%;
   box-sizing: border-box;
   padding: var(--mini-unit);
-  border-radius: var(--round-corners);
+  border-radius: var(--v2-round-corners);
   resize: vertical;
 }

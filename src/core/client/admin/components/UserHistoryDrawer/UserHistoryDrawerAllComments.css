@@ -11,5 +11,5 @@
   border-color: var(--v2-palette-grey-lighter);
   border-radius: var(--v2-round-corners);
 
-  margin-top: var(--spacing-1);
+  margin-top: var(--v2-spacing-1);
 }

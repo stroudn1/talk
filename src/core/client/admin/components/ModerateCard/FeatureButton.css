@@ -5,8 +5,8 @@
 
   border: 1px solid var(--v2-palette-grey-main);
   box-sizing: border-box;
-  border-radius: var(--round-corners);
-  padding: 2px var(--spacing-2) 2px var(--spacing-2);
+  border-radius: var(--v2-round-corners);
+  padding: 2px var(--v2-spacing-2) 2px var(--v2-spacing-2);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -46,16 +46,16 @@ $tab-stream-default: var(--v2-colors-mono-500);
 
 .primary {
   position: relative;
-  background: var(--palette-grey-lightest);
-  color: var(--palette-grey-main);
-  border: 1px solid var(--palette-grey-lighter);
+  background: var(--v2-palette-grey-lightest);
+  color: var(--v2-palette-grey-main);
+  border: 1px solid var(--v2-palette-grey-lighter);
   padding: calc(0.5 * var(--mini-unit)) calc(var(--mini-unit) * 2);
   &.active {
-    background-color: var(--palette-common-white);
-    color: var(--palette-common-black);
+    background-color: var(--v2-palette-common-white);
+    color: var(--v2-colors-pure-black);
     border-bottom: 0;
     border-top-width: calc(0.5 * var(--mini-unit));
-    border-top-color: var(--palette-primary-main);
+    border-top-color: var(--v2-palette-primary-main);
     border-radius: 0;
     z-index: 10;
   }

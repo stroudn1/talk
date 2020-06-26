@@ -1,6 +1,6 @@
 .root {
   border: 0;
-  border-bottom: 1px solid var(--palette-divider);
+  border-bottom: 1px solid var(--v2-palette-divider);
   padding-top: 1px;
   margin-top: calc(3 * var(--mini-unit));
   margin-bottom: calc(2 * var(--mini-unit));

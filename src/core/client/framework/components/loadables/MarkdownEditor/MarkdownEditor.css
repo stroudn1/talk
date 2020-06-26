@@ -14,7 +14,7 @@ $fullscreenZIndex: 10;
   }
   b,
   strong {
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--v2-font-weight-primary-semi-bold);
   }
   h1 {
     font-size: var(--v2-font-size-6);
@@ -230,7 +230,7 @@ $fullscreenZIndex: 10;
       }
       .cm-comment {
         background: rgba(0, 0, 0, 0.05);
-        border-radius: var(--round-corners);
+        border-radius: var(--v2-round-corners);
       }
       .cm-link {
         color: #7f8c8d;

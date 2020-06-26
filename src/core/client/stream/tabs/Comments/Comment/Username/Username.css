@@ -11,5 +11,5 @@
 .popover {
   width: 232px;
   max-width: 80%;
-  padding: var(--spacing-3);
+  padding: var(--v2-spacing-3);
 }

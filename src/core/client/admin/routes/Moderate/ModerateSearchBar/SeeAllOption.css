@@ -30,7 +30,7 @@
 }
 
 .icon {
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--v2-font-weight-primary-semi-bold);
   padding-left: calc(0.5 * var(--mini-unit));
   line-height: calc(16em / 13);
   margin-top: -2px;
