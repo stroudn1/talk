@@ -1,6 +1,6 @@
 .root {
-  border-left: 1px solid var(--palette-grey-main);
-  border-right: 1px solid var(--palette-grey-main);
+  border-left: 1px solid var(--v2-palette-grey-main);
+  border-right: 1px solid var(--v2-palette-grey-main);
   flex: 1;
 }
 

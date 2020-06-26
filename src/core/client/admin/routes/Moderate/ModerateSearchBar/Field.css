@@ -1,4 +1,4 @@
-@import "variables.css";
+@import "./variables.css";
 
 .root {
   width: calc(94 * var(--mini-unit));

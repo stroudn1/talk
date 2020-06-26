@@ -7,6 +7,10 @@
 
 import flat from "flat";
 import { kebabCase, mapKeys, mapValues, pickBy } from "lodash";
+import fs from "fs";
+import path from "path";
+import postcss from "postcss";
+import postcssJs from "postcss-js";
 
 import variables from "./variables";
 import variables2 from "./variables2";
@@ -32,7 +36,11 @@ const cssVariablesV2 = pickBy(
   (v, k) => !k.startsWith("breakpoints-")
 );
 
-const style = {
+const typography = fs.readFileSync(path.join(__dirname, "./typography.css")).toString();
+const typographyObject = postcssJs.objectify(postcss.parse(typography));
+
+const cssObject = {
+  ...typographyObject,
   ":root": {
     ...Object.assign({}, cssVariables, cssVariablesV2),
     "--mini-unit": "calc(1px * var(--mini-unit-small))",
@@ -44,4 +52,4 @@ const style = {
   },
 };
 
-module.exports = style;
+module.exports = cssObject;

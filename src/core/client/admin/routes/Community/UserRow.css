@@ -34,6 +34,6 @@
 
 .deleted {
   display: inline-block;
-  padding-left: var(--spacing-2);
-  color: var(--palette-warning-main);
+  padding-left: var(--v2-spacing-2);
+  color: #DC8400;
 }

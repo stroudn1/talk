@@ -5,9 +5,9 @@ $comment-link: var(--v2-palette-primary-main);
 $comment-link-active: var(--v2-palette-primary-darkest);
 
 .root {
-  composes: bodyCommentV2 from "~coral-ui/shared/typography.css";
-  font-family: var(--v2-font-family-primary);
   font-size: var(--v2-font-size-3);
+  font-weight: var(--v2-font-weight-primary-regular);
+  font-family: var(--v2-font-family-primary);
   line-height: var(--v2-line-height-body-comment);
   color: $comment-content;
   overflow-wrap: break-word;

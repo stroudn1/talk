@@ -1,4 +1,5 @@
-@import "variables.css";
+
+@import "./variables.css";
 
 .root {
   &[aria-selected="true"] {

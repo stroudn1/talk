@@ -4,7 +4,7 @@
 .hr {
   position: absolute;
   border: 0;
-  border-top: 1px solid var(--palette-divider);
+  border-top: 1px solid var(--v2-palette-divider);
   width: 100%;
   margin: 0;
 }
