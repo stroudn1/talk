@@ -1,38 +1,38 @@
 .container {
   width: 350px;
-  background-color: var(--v2-colors-grey-100);
-  border: 1px solid var(--v2-colors-grey-300);
+  background-color: var(--colors-grey-100);
+  border: 1px solid var(--colors-grey-300);
   margin-top: 70px;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .header {
-  background-color: var(--v2-colors-mono-500);
+  background-color: var(--colors-mono-500);
   padding: calc(1.5 * var(--mini-unit));
-  color: var(--v2-colors-mono-100);
+  color: var(--colors-mono-100);
 }
 
 .heading3 {
   margin-bottom: calc(0.25 * var(--mini-unit));
 
-  font-family: var(--v2-font-family-primary);
-  font-weight: var(--v2-font-weight-primary-bold);
-  font-size: var(--v2-font-size-2);
-  line-height: var(--v2-line-height-4);
-  color: var(--v2-colors-pure-white);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-primary-bold);
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-4);
+  color: var(--colors-pure-white);
 
-  margin-bottom: var(--v2-spacing-1);
+  margin-bottom: var(--spacing-1);
 
   text-align: center;
 }
 
 .title {
-  font-family: var(--v2-font-family-primary);
-  font-weight: var(--v2-font-weight-primary-bold);
-  font-size: var(--v2-font-size-4);
-  line-height: var(--v2-line-height-5);
-  color: var(--v2-colors-pure-white);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-primary-bold);
+  font-size: var(--font-size-4);
+  line-height: var(--line-height-5);
+  color: var(--colors-pure-white);
 
   text-align: center;
 }
@@ -41,9 +41,9 @@
   padding: calc(2.5 * var(--mini-unit)) calc(2 * var(--mini-unit))
     calc(2 * var(--mini-unit)) calc(2 * var(--mini-unit));
 
-  font-family: var(--v2-font-family-primary);
-  font-weight: var(--v2-font-weight-primary-regular);
-  font-size: var(--v2-font-size-3);
-  line-height: var(--v2-line-height-4);
-  color: var(--v2-colors-mono-100);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-primary-regular);
+  font-size: var(--font-size-3);
+  line-height: var(--line-height-4);
+  color: var(--colors-mono-100);
 }

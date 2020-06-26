@@ -1,20 +1,20 @@
-$comment-content: var(--v2-colors-mono-900);
-$comment-blockquote-bg: var(--v2-colors-grey-100);
-$comment-highlight-bg: var(--v2-colors-yellow-500);
-$comment-link: var(--v2-palette-primary-main);
-$comment-link-active: var(--v2-palette-primary-darkest);
+$comment-content: var(--colors-mono-900);
+$comment-blockquote-bg: var(--colors-grey-100);
+$comment-highlight-bg: var(--colors-yellow-500);
+$comment-link: var(--palette-primary-main);
+$comment-link-active: var(--palette-primary-darkest);
 
 .root {
-  font-size: var(--v2-font-size-3);
-  font-weight: var(--v2-font-weight-primary-regular);
-  font-family: var(--v2-font-family-primary);
-  line-height: var(--v2-line-height-body-comment);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-primary-regular);
+  font-family: var(--font-family-primary);
+  line-height: var(--line-height-body-comment);
   color: $comment-content;
   overflow-wrap: break-word;
 
   b,
   strong {
-    font-weight: var(--v2-font-weight-primary-bold);
+    font-weight: var(--font-weight-primary-bold);
   }
   i,
   em {
@@ -25,7 +25,7 @@ $comment-link-active: var(--v2-palette-primary-darkest);
     padding: var(--mini-unit);
     margin: calc(2 * var(--mini-unit)) 0 calc(2 * var(--mini-unit))
       var(--mini-unit);
-    border-radius: var(--v2-round-corners);
+    border-radius: var(--round-corners);
     &::after {
       content: none;
     }

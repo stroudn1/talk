@@ -4,6 +4,6 @@
 
 .link {
   display: block;
-  font-size: var(--v2-font-size-6);
-  font-family: var(--v2-font-family-primary);
+  font-size: var(--font-size-6);
+  font-family: var(--font-family-primary);
 }

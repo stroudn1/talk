@@ -4,18 +4,18 @@
 .hr {
   position: absolute;
   border: 0;
-  border-top: 1px solid var(--v2-palette-divider);
+  border-top: 1px solid var(--palette-divider);
   width: 100%;
   margin: 0;
 }
 .text {
-  font-size: var(--v2-font-size-4);
-  font-weight: var(--v2-font-weight-primary-semi-bold);
-  font-family: var(--v2-font-family-primary);
-  line-height: var(--v2-line-height-4);
-  color: var(--v2-colors-mono-500);
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-primary-semi-bold);
+  font-family: var(--font-family-primary);
+  line-height: var(--line-height-4);
+  color: var(--colors-mono-500);
 
   position: relative;
-  background-color: var(--v2-colors-pure-white);
+  background-color: var(--colors-pure-white);
   padding: 0 var(--mini-unit);
 }

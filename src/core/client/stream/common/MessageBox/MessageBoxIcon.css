@@ -2,8 +2,8 @@
   align-self: flex-start;
   margin-top: 1px;
   flex-shrink: 0;
-  color: var(--v2-palette-text-light);
+  color: var(--palette-text-light);
   &:first-child {
-    margin-right: var(--v2-spacing-3);
+    margin-right: var(--spacing-3);
   }
 }

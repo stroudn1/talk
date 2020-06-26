@@ -5,27 +5,27 @@
 }
 
 .label {
-  font-size: var(--v2-font-size-3);
-  font-weight: var(--v2-font-weight-primary-regular);
-  font-family: var(--v2-font-family-primary);
-  line-height: var(--v2-line-height-5);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-primary-regular);
+  font-family: var(--font-family-primary);
+  line-height: var(--line-height-5);
 
   display: inline-flex;
   align-items: center;
   position: relative;
   cursor: pointer;
   user-select: none;
-  border: 1px solid var(--v2-colors-grey-300);
-  border-radius: var(--v2-round-corners);
-  color: var(--v2-colors-mono-500);
-  padding: var(--v2-spacing-1);
-  line-height: var(--v2-line-height-3);
+  border: 1px solid var(--colors-grey-300);
+  border-radius: var(--round-corners);
+  color: var(--colors-mono-500);
+  padding: var(--spacing-1);
+  line-height: var(--line-height-3);
   box-sizing: border-box;
   height: 100%;
 }
 
 .checked {
-  border: 1px solid var(--v2-colors-stream-blue-500);
-  background: var(--v2-colors-stream-blue-500);
-  color: var(--v2-colors-mono-100);
+  border: 1px solid var(--colors-stream-blue-500);
+  background: var(--colors-stream-blue-500);
+  color: var(--colors-mono-100);
 }

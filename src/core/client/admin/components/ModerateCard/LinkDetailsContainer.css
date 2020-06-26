@@ -1,11 +1,11 @@
 .label {
-  font-size: var(--v2-font-size-3);
-  font-weight: var(--v2-font-weight-primary-regular);
-  font-family: var(--v2-font-family-primary);
-  color: var(--v2-palette-text-primary);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-primary-regular);
+  font-family: var(--font-family-primary);
+  color: var(--palette-text-primary);
 }
 
 .buttonContainer {
   display: inline-block;
-  padding-right: var(--v2-spacing-2);
+  padding-right: var(--spacing-2);
 }

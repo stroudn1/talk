@@ -6,17 +6,17 @@
 }
 
 .textarea {
-  font-size: var(--v2-font-size-3);
-  font-weight: var(--v2-font-weight-primary-regular);
-  font-family: var(--v2-font-family-primary);
-  line-height: var(--v2-line-height-body-comment);
-  color: var(--v2-palette-text-primary);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-primary-regular);
+  font-family: var(--font-family-primary);
+  line-height: var(--line-height-body-comment);
+  color: var(--palette-text-primary);
 
   display: block;
   height: 150px;
   width: 100%;
   box-sizing: border-box;
   padding: var(--mini-unit);
-  border-radius: var(--v2-round-corners);
+  border-radius: var(--round-corners);
   resize: vertical;
 }

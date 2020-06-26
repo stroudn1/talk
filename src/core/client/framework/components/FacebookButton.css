@@ -1,5 +1,5 @@
 .icon {
-  margin-right: var(--v2-spacing-2);
+  margin-right: var(--spacing-2);
 
   height: 1rem;
   overflow: hidden;
@@ -9,7 +9,7 @@
   border-style: solid;
   border-width: 1px;
 
-  color: var(--v2-colors-pure-white);
+  color: var(--colors-pure-white);
 
   &:not(.disabled),
   &:not(:disabled) {
@@ -26,8 +26,8 @@
     border-color: #6583c3;
   }
   &.disabled {
-    color: var(--v2-colors-grey-400);
-    background-color: var(--v2-colors-grey-200);
-    border-color: var(--v2-colors-grey-200);
+    color: var(--colors-grey-400);
+    background-color: var(--colors-grey-200);
+    border-color: var(--colors-grey-200);
   }
 }

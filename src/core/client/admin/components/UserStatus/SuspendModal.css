@@ -1,24 +1,24 @@
-$suspend-modal-text: var(--v2-colors-mono-500);
+$suspend-modal-text: var(--colors-mono-500);
 
 .bodyText {
-  font-size: var(--v2-font-size-3);
-  font-family: var(--v2-font-family-primary);
-  font-weight: var(--v2-font-weight-primary-regular);
-  line-height: var(--v2-line-height-body-short);
+  font-size: var(--font-size-3);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-primary-regular);
+  line-height: var(--line-height-body-short);
   color: $suspend-modal-text;
 }
 
 .subTitle {
-  font-size: var(--v2-font-size-4);
-  font-family: var(--v2-font-family-primary);
-  font-weight: var(--v2-font-weight-primary-semi-bold);
-  line-height: var(--v2-line-height-title);
+  font-size: var(--font-size-4);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-primary-semi-bold);
+  line-height: var(--line-height-title);
   color: $suspend-modal-text;
   margin: 0;
 }
 
 .radioButton {
-  margin: 0 var(--v2-spacing-1) 0 0 !important;
+  margin: 0 var(--spacing-1) 0 0 !important;
 }
 
 .textArea {
@@ -29,9 +29,9 @@ $suspend-modal-text: var(--v2-colors-mono-500);
 }
 
 .header {
-  margin: 0 0 var(--v2-spacing-3) 0 !important;
+  margin: 0 0 var(--spacing-3) 0 !important;
 }
 
 .footer {
-  margin-top: var(--v2-spacing-3);
+  margin-top: var(--spacing-3);
 }

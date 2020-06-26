@@ -13,23 +13,23 @@
 }
 
 .tealIcon {
-  background-color: var(--v2-colors-teal-100);
-  color: var(--v2-colors-teal-600);
+  background-color: var(--colors-teal-100);
+  color: var(--colors-teal-600);
 }
 
 .redIcon {
-  background-color: var(--v2-colors-red-100);
-  color: var(--v2-colors-red-500);
+  background-color: var(--colors-red-100);
+  color: var(--colors-red-500);
 }
 
 .greyIcon {
-  background-color: var(--v2-colors-grey-200);
-  color: var(--v2-colors-grey-500);
+  background-color: var(--colors-grey-200);
+  color: var(--colors-grey-500);
 }
 
 .blueIcon {
-  background-color: var(--v2-colors-blue-100);
-  color: var(--v2-colors-blue-500);
+  background-color: var(--colors-blue-100);
+  color: var(--colors-blue-500);
 }
 
 .outer {

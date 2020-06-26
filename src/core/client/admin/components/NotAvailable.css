@@ -1,4 +1,4 @@
-$tableBodyDisabledColor: var(--v2-colors-mono-100);
+$tableBodyDisabledColor: var(--colors-mono-100);
 
 .root {
   color: $tableBodyDisabledColor;

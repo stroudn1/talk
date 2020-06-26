@@ -1,7 +1,7 @@
 .icon {
-  color: var(--v2-colors-mono-500);
+  color: var(--colors-mono-500);
 }
 
 .gutter {
-  margin-bottom: var(--v2-spacing-3);
+  margin-bottom: var(--spacing-3);
 }

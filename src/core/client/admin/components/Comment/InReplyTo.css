@@ -1,36 +1,36 @@
-$moderateCardIconColor: var(--v2-colors-mono-100);
-$moderateCardInReplyToColor: var(--v2-colors-mono-100);
-$moderateCardInReplyToUsernameColor: var(--v2-colors-mono-500);
-$moderateCardUsernameBackgroundHover: var(--v2-colors-grey-200);
+$moderateCardIconColor: var(--colors-mono-100);
+$moderateCardInReplyToColor: var(--colors-mono-100);
+$moderateCardInReplyToUsernameColor: var(--colors-mono-500);
+$moderateCardUsernameBackgroundHover: var(--colors-grey-200);
 
 .icon {
   color: $moderateCardIconColor;
 }
 .inReplyTo {
   color: $moderateCardInReplyToColor;
-  font-family: var(--v2-font-family-primary);
-  font-weight: var(--v2-font-weight-primary-regular);
-  font-size: var(--v2-font-size-2);
-  line-height: var(--v2-line-height-reset);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-primary-regular);
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-reset);
 }
 .username {
   color: $moderateCardInReplyToUsernameColor;
-  font-family: var(--v2-font-family-secondary);
-  font-weight: var(--v2-font-weight-secondary-bold);
-  font-size: var(--v2-font-size-3);
-  line-height: var(--v2-line-height-reset);
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-secondary-bold);
+  font-size: var(--font-size-3);
+  line-height: var(--line-height-reset);
 
-  padding: var(--v2-spacing-1);
+  padding: var(--spacing-1);
 
   &:hover {
     background-color: $moderateCardUsernameBackgroundHover;
-    border-radius: var(--v2-round-corners);
+    border-radius: var(--round-corners);
     border-style: none;
   }
 
   &:active {
     background-color: $moderateCardUsernameBackgroundHover;
-    border-radius: var(--v2-round-corners);
+    border-radius: var(--round-corners);
     border-style: none;
   }
 }
@@ -38,5 +38,5 @@ $moderateCardUsernameBackgroundHover: var(--v2-colors-grey-200);
 .usernameButton {
   vertical-align: baseline;
 
-  margin-left: calc(-1 * var(--v2-spacing-1));
+  margin-left: calc(-1 * var(--spacing-1));
 }

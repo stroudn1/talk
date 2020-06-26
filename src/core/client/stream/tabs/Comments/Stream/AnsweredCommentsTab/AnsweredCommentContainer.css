@@ -1,45 +1,45 @@
 .root {
-  color: var(--v2-palette-text-primary);
-  padding-left: var(--v2-spacing-4);
+  color: var(--palette-text-primary);
+  padding-left: var(--spacing-4);
   box-sizing: border-box;
 
   border-left-width: 2px;
   border-left-style: solid;
   border-left-color: #3498DB;
 
-  margin-left: var(--v2-spacing-2);
+  margin-left: var(--spacing-2);
 }
 
 .replies,
 .gotoConversation {
-  font-size: var(--v2-font-size-2);
-  font-weight: var(--v2-font-weight-primary-semi-bold);
-  font-family: var(--v2-font-family-primary);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-primary-semi-bold);
+  font-family: var(--font-family-primary);
   line-height: 0;
 }
 
 .gotoArrow {
   display: inline-block;
   text-decoration: none;
-  margin-left: var(--v2-spacing-1);
+  margin-left: var(--spacing-1);
 }
 
 .username {
-  margin-right: var(--v2-spacing-1);
+  margin-right: var(--spacing-1);
 }
 
 .timestamp {
-  margin-left: var(--v2-spacing-2);
+  margin-left: var(--spacing-2);
 }
 
 .replies {
-  color: var(--v2-palette-grey-main);
+  color: var(--palette-grey-main);
 }
 
 .repliesText {
-  margin: var(--v2-spacing-2);
+  margin: var(--spacing-2);
 }
 
 .repliesDivider {
-  margin: var(--v2-spacing-2);
+  margin: var(--spacing-2);
 }

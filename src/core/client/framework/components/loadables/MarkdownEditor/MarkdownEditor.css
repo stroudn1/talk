@@ -2,11 +2,11 @@ $minHeight: 200px;
 $fullscreenZIndex: 10;
 
 .wrapper {
-  font-size: var(--v2-font-size-3);
-  font-weight: var(--v2-font-weight-primary-regular);
-  font-family: var(--v2-font-family-primary);
-  line-height: var(--v2-line-height-4);
-  color: var(--v2-colors-mono-500);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-primary-regular);
+  font-family: var(--font-family-primary);
+  line-height: var(--line-height-4);
+  color: var(--colors-mono-500);
 
   i
   em {
@@ -14,42 +14,42 @@ $fullscreenZIndex: 10;
   }
   b,
   strong {
-    font-weight: var(--v2-font-weight-primary-semi-bold);
+    font-weight: var(--font-weight-primary-semi-bold);
   }
   h1 {
-    font-size: var(--v2-font-size-6);
-    font-weight: var(--v2-font-weight-primary-semi-bold);
-    font-family: var(--v2-font-family-primary);
-    line-height: var(--v2-line-height-6);
-    color: var(--v2-colors-mono-500);
+    font-size: var(--font-size-6);
+    font-weight: var(--font-weight-primary-semi-bold);
+    font-family: var(--font-family-primary);
+    line-height: var(--line-height-6);
+    color: var(--colors-mono-500);
   }
   h2 {
-    font-size: var(--v2-font-size-5);
-    font-weight: var(--v2-font-weight-primary-semi-bold);
-    font-family: var(--v2-font-family-primary);
-    line-height: var(--v2-line-height-5);
-    color: var(--v2-colors-mono-500);
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-primary-semi-bold);
+    font-family: var(--font-family-primary);
+    line-height: var(--line-height-5);
+    color: var(--colors-mono-500);
   }
   h3 {
-    font-size: var(--v2-font-size-4);
-    font-weight: var(--v2-font-weight-primary-semi-bold);
-    font-family: var(--v2-font-family-primary);
-    line-height: var(--v2-line-height-4);
-    color: var(--v2-colors-mono-500);
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-primary-semi-bold);
+    font-family: var(--font-family-primary);
+    line-height: var(--line-height-4);
+    color: var(--colors-mono-500);
   }
   h4 {
-    font-size: var(--v2-font-size-3);
-    font-weight: var(--v2-font-weight-primary-semi-bold);
-    font-family: var(--v2-font-family-primary);
-    line-height: var(--v2-line-height-3);
-    color: var(--v2-colors-mono-500);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-primary-semi-bold);
+    font-family: var(--font-family-primary);
+    line-height: var(--line-height-3);
+    color: var(--colors-mono-500);
   }
   h5 {
-    font-size: var(--v2-font-size-2);
-    font-weight: var(--v2-font-weight-primary-semi-bold);
-    font-family: var(--v2-font-family-primary);
-    line-height: var(--v2-line-height-2);
-    color: var(--v2-colors-mono-500);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-primary-semi-bold);
+    font-family: var(--font-family-primary);
+    line-height: var(--line-height-2);
+    color: var(--colors-mono-500);
   }
   *:first-child {
     margin-top: 0;
@@ -62,7 +62,7 @@ $fullscreenZIndex: 10;
     padding: var(--mini-unit);
     margin: calc(2 * var(--mini-unit)) 0 calc(2 * var(--mini-unit))
       var(--mini-unit);
-    border-radius: var(--v2-round-corners);
+    border-radius: var(--round-corners);
     &::after {
       content: none;
     }
@@ -230,7 +230,7 @@ $fullscreenZIndex: 10;
       }
       .cm-comment {
         background: rgba(0, 0, 0, 0.05);
-        border-radius: var(--v2-round-corners);
+        border-radius: var(--round-corners);
       }
       .cm-link {
         color: #7f8c8d;

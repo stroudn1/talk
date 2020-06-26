@@ -1,8 +1,8 @@
-$tab-selected: var(--v2-colors-teal-600);
-$tab-default: var(--v2-colors-mono-100);
+$tab-selected: var(--colors-teal-600);
+$tab-default: var(--colors-mono-100);
 
-$tab-stream-selected: var(--v2-colors-stream-blue-500);
-$tab-stream-default: var(--v2-colors-mono-500);
+$tab-stream-selected: var(--colors-stream-blue-500);
+$tab-stream-default: var(--colors-mono-500);
 
 .root {
   display: inline-block;
@@ -20,76 +20,76 @@ $tab-stream-default: var(--v2-colors-mono-500);
 }
 
 .root:first-child .primary {
-  border-top-left-radius: var(--v2-round-corners);
+  border-top-left-radius: var(--round-corners);
 }
 
 .root:last-child .primary {
-  border-top-right-radius: var(--v2-round-corners);
+  border-top-right-radius: var(--round-corners);
 }
 
 .default {
-  margin-right: var(--v2-spacing-3);
+  margin-right: var(--spacing-3);
   margin-bottom: -1px;
 
-  font-family: var(--v2-font-family-primary);
-  font-weight: var(--v2-font-weight-primary-semi-bold);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-primary-semi-bold);
   color: $tab-default;
-  padding-bottom: calc(var(--v2-spacing-1) + 2px);
+  padding-bottom: calc(var(--spacing-1) + 2px);
 
   &.active {
     color: $tab-selected;
-    font-weight: var(--v2-font-weight-primary-bold);
+    font-weight: var(--font-weight-primary-bold);
     border-bottom: 2px solid $tab-selected;
-    padding-bottom: var(--v2-spacing-1);
+    padding-bottom: var(--spacing-1);
   }
 }
 
 .primary {
   position: relative;
-  background: var(--v2-palette-grey-lightest);
-  color: var(--v2-palette-grey-main);
-  border: 1px solid var(--v2-palette-grey-lighter);
+  background: var(--palette-grey-lightest);
+  color: var(--palette-grey-main);
+  border: 1px solid var(--palette-grey-lighter);
   padding: calc(0.5 * var(--mini-unit)) calc(var(--mini-unit) * 2);
   &.active {
-    background-color: var(--v2-palette-common-white);
-    color: var(--v2-colors-pure-black);
+    background-color: var(--palette-common-white);
+    color: var(--colors-pure-black);
     border-bottom: 0;
     border-top-width: calc(0.5 * var(--mini-unit));
-    border-top-color: var(--v2-palette-primary-main);
+    border-top-color: var(--palette-primary-main);
     border-radius: 0;
     z-index: 10;
   }
 }
 
 .secondary {
-  margin-right: var(--v2-spacing-3);
+  margin-right: var(--spacing-3);
   margin-bottom: -1px;
 
-  font-family: var(--v2-font-family-primary);
+  font-family: var(--font-family-primary);
   color: $tab-default;
-  padding-bottom: var(--v2-spacing-2);
+  padding-bottom: var(--spacing-2);
 
   &.active {
     color: $tab-selected;
-    font-weight: var(--v2-font-weight-primary-bold);
+    font-weight: var(--font-weight-primary-bold);
     border-bottom: 3px solid $tab-selected;
-    padding-bottom: calc(var(--v2-spacing-2) - 3px);
+    padding-bottom: calc(var(--spacing-2) - 3px);
   }
 }
 
 .streamSecondary {
-  margin-right: var(--v2-spacing-3);
+  margin-right: var(--spacing-3);
   margin-bottom: -1px;
 
-  font-family: var(--v2-font-family-primary);
+  font-family: var(--font-family-primary);
   color: $tab-stream-default;
-  padding-bottom: var(--v2-spacing-2);
+  padding-bottom: var(--spacing-2);
 
   &.active {
     color: $tab-stream-selected;
-    font-weight: var(--v2-font-weight-primary-bold);
+    font-weight: var(--font-weight-primary-bold);
     border-bottom: 3px solid $tab-stream-selected;
-    padding-bottom: calc(var(--v2-spacing-2) - 3px);
+    padding-bottom: calc(var(--spacing-2) - 3px);
   }
 }
 
@@ -99,34 +99,34 @@ $tab-stream-default: var(--v2-colors-mono-500);
   margin-right: 0px;
   margin-bottom: -1px;
 
-  padding-top: var(--v2-spacing-3);
-  padding-bottom: var(--v2-spacing-3);
-  padding-left: var(--v2-spacing-6);
-  padding-right: var(--v2-spacing-6);
+  padding-top: var(--spacing-3);
+  padding-bottom: var(--spacing-3);
+  padding-left: var(--spacing-6);
+  padding-right: var(--spacing-6);
 
-  background: var(--v2-colors-grey-100);
-  border: 1px solid var(--v2-colors-grey-300);
+  background: var(--colors-grey-100);
+  border: 1px solid var(--colors-grey-300);
   border-bottom-width: 0px;
 
-  font-family: var(--v2-font-family-secondary);
+  font-family: var(--font-family-secondary);
   font-style: normal;
-  font-weight: var(--v2-font-weight-secondary-regular);
-  font-size: var(--v2-font-size-4);
-  line-height: var(--v2-line-height-5);
+  font-weight: var(--font-weight-secondary-regular);
+  font-size: var(--font-size-4);
+  line-height: var(--line-height-5);
 
-  color: var(--v2-colors-mono-500);
+  color: var(--colors-mono-500);
 
   &.active {
     z-index: 10;
 
-    background-color: var(--v2-colors-pure-white);
+    background-color: var(--colors-pure-white);
     border-bottom: 0;
     border-radius: 0;
 
-    color: var(--v2-colors-stream-blue-500);
-    font-weight: var(--v2-font-weight-secondary-bold);
+    color: var(--colors-stream-blue-500);
+    font-weight: var(--font-weight-secondary-bold);
 
-    border-top: 1px solid var(--v2-colors-stream-blue-500);
+    border-top: 1px solid var(--colors-stream-blue-500);
 
     overflow: visible;
   }
@@ -140,8 +140,8 @@ $tab-stream-default: var(--v2-colors-mono-500);
   width: calc(100% + 2px);
   height: 4px;
 
-  background-color: var(--v2-colors-stream-blue-500);
-  color: var(--v2-colors-stream-blue-500);
+  background-color: var(--colors-stream-blue-500);
+  color: var(--colors-stream-blue-500);
   content: "active";
   overflow: hidden;
 }

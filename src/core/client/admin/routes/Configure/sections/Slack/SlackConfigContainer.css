@@ -1,8 +1,8 @@
 .icon {
-  padding-right: var(--v2-spacing-2);
+  padding-right: var(--spacing-2);
 }
 
 .button {
-  padding-top: var(--v2-spacing-1);
-  padding-bottom: var(--v2-spacing-1);
+  padding-top: var(--spacing-1);
+  padding-bottom: var(--spacing-1);
 }

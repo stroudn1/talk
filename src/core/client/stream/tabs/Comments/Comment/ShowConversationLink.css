@@ -1,6 +1,6 @@
-$commentsConversationLinkColor: var(--v2-colors-stream-blue-500);
-$commentsConversationLinkColorHovered: var(--v2-colors-stream-blue-700);
-$commentsConversationLinkColorActive: var(--v2-colors-stream-blue-800);
+$commentsConversationLinkColor: var(--colors-stream-blue-500);
+$commentsConversationLinkColorHovered: var(--colors-stream-blue-700);
+$commentsConversationLinkColorActive: var(--colors-stream-blue-800);
 
 .conversationLink {
   &.colorRegular {

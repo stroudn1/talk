@@ -1,9 +1,9 @@
-$moderateCardButtonOutlineRejectColor: var(--v2-colors-red-500);
+$moderateCardButtonOutlineRejectColor: var(--colors-red-500);
 
 .root {
   border: 1px solid $moderateCardButtonOutlineRejectColor;
   box-sizing: border-box;
-  border-radius: var(--v2-round-corners);
+  border-radius: var(--round-corners);
   width: 65px;
   height: 50px;
   display: flex;
@@ -12,13 +12,13 @@ $moderateCardButtonOutlineRejectColor: var(--v2-colors-red-500);
   color: $moderateCardButtonOutlineRejectColor;
   &:not(:disabled):active {
     background-color: $moderateCardButtonOutlineRejectColor;
-    color: var(--v2-colors-pure-white);
+    color: var(--colors-pure-white);
   }
 }
 
 .invert {
   background-color: $moderateCardButtonOutlineRejectColor;
-  color: var(--v2-colors-pure-white);
+  color: var(--colors-pure-white);
 }
 
 .icon {

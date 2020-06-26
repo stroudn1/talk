@@ -1,4 +1,4 @@
 .stream > *:not(:first-child):not(button) {
-  border-top: 1px solid var(--v2-palette-divider);
-  padding-top: var(--v2-spacing-3)
+  border-top: 1px solid var(--palette-divider);
+  padding-top: var(--spacing-3)
 }

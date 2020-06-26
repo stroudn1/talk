@@ -4,12 +4,12 @@
 
 .loadMore {
   width: 100%;
-  background-color: var(--v2-colors-pure-white);
+  background-color: var(--colors-pure-white);
 
   border-width: 1px;
   border-style: solid;
-  border-color: var(--v2-palette-grey-lighter);
-  border-radius: var(--v2-round-corners);
+  border-color: var(--palette-grey-lighter);
+  border-radius: var(--round-corners);
 
-  margin-top: var(--v2-spacing-1);
+  margin-top: var(--spacing-1);
 }
